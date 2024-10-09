@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  transition: 0.5s ease-in-out;
+  font-family: var(--global-font);
+}
+
+input:focus {
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+:root {
+  /* Basic fonts for 1C project */
+  --global-font: "Poppins", sans-serif;
+
+  /* colors */
+  --basic-color: #fbbb00;
+  --second-color: #1c1c1c;
+}
