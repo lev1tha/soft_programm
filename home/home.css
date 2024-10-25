@@ -89,7 +89,6 @@ main {
   margin: 0 5px; /* Пространство между точками */
 }
 
-/* Активная точка */
 .swiper-pagination-bullet-active {
   width: 40px; /* Длинная форма для активной точки */
   height: 12px; /* Высота остается как у обычных точек */
@@ -148,7 +147,7 @@ main .button_main a {
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
-  gap: 21px;
+  gap: 20px;
 }
 
 .card_container {
@@ -165,7 +164,9 @@ main .button_main a {
 }
 
 .card_container p {
+  margin-top: 12px;
   font-size: 20px;
+  color: #1c1c1ce5;
   line-height: 27px;
   font-weight: 300;
   font-family: var(--global-font);
@@ -323,6 +324,7 @@ main .button_main a {
 }
 
 .left_site_application .suptitle p {
+  color: #1c1c1ce5;
   font-size: 20px;
   line-height: 27px;
   font-weight: 300;
@@ -356,7 +358,7 @@ main .button_main a {
 .right_site_application .top input {
   width: 500px;
   margin-top: 8px;
-  background-color: transparent;
+  background-color: #1c1c1c10;
   padding: 10px 16px;
   border: 1px solid #1c1c1c66;
   border-radius: 32px;
@@ -381,10 +383,10 @@ main .button_main a {
 .right_site_application .middle input {
   width: 230px;
   margin-top: 8px;
-  background-color: transparent;
   padding: 10px 16px;
   border: 1px solid #1c1c1c66;
   border-radius: 32px;
+  background-color: #1c1c1c10;
 }
 
 .right_site_application .middle input::placeholder {
@@ -463,9 +465,10 @@ main .button_main a {
   justify-content: center;
   width: 40px;
   height: 40px;
-  background-color: #f5f5f5;
+  background-color: transparent;
+  border-radius: 1px solid #f5f5f5;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
   user-select: none;
@@ -473,7 +476,8 @@ main .button_main a {
 
 .icon-toggle.active {
   background-color: #000;
-  transform: rotate(180deg);
+  transform: rotate(360deg);
+  box-shadow: 4px 4px 8px #0000001f;
 }
 
 .down-arrow,
@@ -869,6 +873,10 @@ footer .down_navigate .economic p {
   main .left_main_site .title h1 {
     font-size: 36px;
     line-height: 42px;
+  }
+
+  .card_company {
+    flex-wrap: wrap;
   }
 
   .card_container {

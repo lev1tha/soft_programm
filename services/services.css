@@ -41,11 +41,14 @@ header .navigate nav a {
 
 header .navigate nav .drop-menu {
   display: none;
+  overflow: hidden;
 }
+
 header .navigate nav li:hover > .drop-menu {
   display: initial;
   transition: 0.5s ease-in-out;
 }
+
 header .navigate nav .drop-menu-after {
   display: flex;
   left: 200px;
@@ -58,6 +61,7 @@ header .navigate nav .drop-menu-after {
   border: 1px solid transparent;
   border-radius: 10px;
 }
+
 header .navigate nav .drop-menu .licences {
   width: Fixed (300px) px;
   padding: 12px 0px 12px 0px;
@@ -65,6 +69,7 @@ header .navigate nav .drop-menu .licences {
   border-radius: 24px 0px 0px 0px;
   opacity: 0px;
 }
+
 header .navigate nav .drop-menu .licences h1 {
   font-family: Poppins;
   font-size: 14px;
@@ -72,6 +77,7 @@ header .navigate nav .drop-menu .licences h1 {
   line-height: 21.6px;
   text-align: center;
 }
+
 header .navigate nav .drop-menu .licences p {
   width: Hug (150px) px;
   font-family: Poppins;
@@ -864,9 +870,9 @@ footer .down_navigate .economic p {
   color: var(--black-50, #1c1c1c80);
 }
 @media (min-width: 481px) and (max-width: 768px) {
-   /* footer */
+  /* footer */
 
-   footer {
+  footer {
     margin-top: 20px;
     background-color: var(--basic-color);
     border-radius: 80px;
