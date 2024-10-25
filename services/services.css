@@ -104,6 +104,7 @@ header .navigate nav .drop-menu .model h1 {
   line-height: 21.6px;
   text-align: center;
 }
+
 header .navigate nav .drop-menu .model p {
   width: Hug (189px) px;
   height: Hug (172px) px;
@@ -142,6 +143,7 @@ header .navigate nav .drop-menu .fresh {
   border-radius: 24px 0px 0px 0px;
   opacity: 0px;
 }
+
 header .navigate nav .drop-menu .fresh h1 {
   font-family: Poppins;
   font-size: 14px;
@@ -158,6 +160,7 @@ header .navigate nav .drop-menu .server {
   border-radius: 24px 0px 0px 0px;
   opacity: 0px;
 }
+
 header .navigate nav .drop-menu .server h1 {
   font-family: Poppins;
   font-size: 14px;
@@ -165,6 +168,7 @@ header .navigate nav .drop-menu .server h1 {
   line-height: 21.6px;
   text-align: center;
 }
+
 header .navigate nav .drop-menu .server p {
   width: Hug (189px) px;
   height: Hug (172px) px;
@@ -184,6 +188,7 @@ header .navigate nav .drop-menu .economic {
   border-radius: 24px 0px 0px 0px;
   opacity: 0px;
 }
+
 header .navigate nav .drop-menu .economic h1 {
   font-family: Poppins;
   font-size: 14px;
@@ -191,6 +196,7 @@ header .navigate nav .drop-menu .economic h1 {
   line-height: 21.6px;
   text-align: center;
 }
+
 header .navigate nav .drop-menu .economic p {
   width: Hug (189px) px;
   height: Hug (172px) px;
@@ -257,11 +263,9 @@ main .card-container .card .right_site_map .box {
   left: 240px;
   gap: 0px;
   border-radius: 80px;
-  border: 2px 0px 0px 0px;
-  opacity: 0px;
-  background: var(--Basic, #fbbb00);
-  border: 2px solid var(--black-10, #1c1c1c1a);
-  box-shadow: 0px 12px 32px 0px #dea50099;
+  border: 2px solid var(--Basic, #fbbb00);
+  border-radius: 80px;
+
 }
 
 main .card-container .card .right_site_map .box_title h1 {
@@ -283,7 +287,7 @@ main .card-container .card .right_site_map .box_title p {
 }
 
 main .card-container .card .right_site_map .box_title span {
-  border: 1px solid black;
+  border: 1px solid #0000001f;
   border-radius: 5px;
   color: black;
   width: Fixed (28px) px;
@@ -297,7 +301,7 @@ main .card-container .card .right_site_map .box_title p:hover {
   transition: 0.5s ease-in-out;
 }
 
-main .card-container .card .right_site_map .box_title p span:hover {
+main .card-container .card .right_site_map .box_title p:hover > span {
   color: #fbbb00;
   background-color: black;
   transition: 0.5s ease-in-out;
@@ -314,11 +318,42 @@ main .card-container .card .right_site_map .box_1 {
   border-radius: 80px;
   border: 2px 0px 0px 0px;
   opacity: 0px;
+}
+
+main .card-container .card .right_site_map .box:hover {
+  background: var(--Basic, #fbbb00);
+  border: 2px solid var(--black-10, #1c1c1c1a);
   box-shadow: 0px 12px 32px 0px #dea50099;
 }
 
 main .card-container .card .right_site_map .box_1:hover {
   background: var(--Basic, #fbbb00);
+  border: 2px solid var(--black-10, #1c1c1c1a);
+  box-shadow: 0px 12px 32px 0px #dea50099;
+}
+
+main .card-container .card .left_site_map .box_2:hover {
+  background: var(--Basic, #fbbb00);
+  border: 2px solid var(--black-10, #1c1c1c1a);
+  box-shadow: 0px 12px 32px 0px #dea50099;
+}
+
+.main .card-container-down .card-down .left_site_down .box_2:hover {
+  background: var(--Basic, #fbbb00);
+  border: 2px solid var(--black-10, #1c1c1c1a);
+  box-shadow: 0px 12px 32px 0px #dea50099;
+}
+
+.main .card-container-down .card-down .right_site_down .box:hover {
+  background: var(--Basic, #fbbb00);
+  border: 2px solid var(--black-10, #1c1c1c1a);
+  box-shadow: 0px 12px 32px 0px #dea50099;
+}
+
+.main .card-container-down .card-down .right_site_down .box_1:hover {
+  background: var(--Basic, #fbbb00);
+  border: 2px solid var(--black-10, #1c1c1c1a);
+  box-shadow: 0px 12px 32px 0px #dea50099;
 }
 
 main .card-container .card .left_site_map {
@@ -334,7 +369,6 @@ main .card-container .card .left_site_map .box_2 {
   border-radius: 80px;
   border: 2px 0px 0px 0px;
   opacity: 0px;
-  box-shadow: 0px 12px 32px 0px #dea50099;
 }
 
 main .card-container .card .left_site_map .box_2 img {
@@ -365,13 +399,24 @@ main .card-container .card .left_site_map .box_title p {
 }
 
 main .card-container .card .left_site_map .box_title span {
-  border: 1px solid black;
+  border: 1px solid #0000001f;
   border-radius: 5px;
   color: black;
   width: Fixed (28px) px;
   height: Fixed (28px) px;
   border: 1px 0px 0px 0px;
   opacity: 0px;
+}
+
+main .card-container .card .left_site_map .box_2 p:hover {
+  color: black;
+  transition: 0.5s ease-in-out;
+}
+
+main .card-container .card .left_site_map .box_2 p:hover > span {
+  color: #fbbb00;
+  background-color: black;
+  transition: 0.5s ease-in-out;
 }
 
 /* 2card */
@@ -402,7 +447,6 @@ main .card-container .card .left_site_map .box_title span {
   opacity: 0px;
   background: var(--Basic, #ffffff);
   border: 2px solid var(--Basic, #fbbb00);
-  box-shadow: 0px 12px 32px 0px #dea50099;
   margin-left: 50px;
 }
 
@@ -425,7 +469,7 @@ main .card-container .card .left_site_map .box_title span {
 }
 
 .main .card-container-down .card-down .right_site_down .box_title span {
-  border: 1px solid black;
+  border: 1px solid #0000001f;
   border-radius: 5px;
   color: black;
   width: Fixed (28px) px;
@@ -439,7 +483,13 @@ main .card-container .card .left_site_map .box_title span {
   transition: 0.5s ease-in-out;
 }
 
-.main .card-container-down .card-down .right_site_down .box_title p span:hover {
+.main
+  .card-container-down
+  .card-down
+  .right_site_down
+  .box_title
+  p:hover
+  > span {
   color: #fbbb00;
   background-color: black;
   transition: 0.5s ease-in-out;
@@ -456,7 +506,6 @@ main .card-container .card .left_site_map .box_title span {
   border-radius: 80px;
   border: 2px 0px 0px 0px;
   opacity: 0px;
-  box-shadow: 0px 12px 32px 0px #dea50099;
   margin-left: 50px;
 }
 
@@ -471,7 +520,7 @@ main .card-container .card .left_site_map .box_title span {
   border-radius: 80px;
   border: 2px 0px 0px 0px;
   opacity: 0px;
-  box-shadow: 0px 12px 32px 0px #dea50099;
+
 }
 
 .main .card-container-down .card-down .left_site_down .box_2 img {
@@ -502,7 +551,7 @@ main .card-container .card .left_site_map .box_title span {
 }
 
 .main .card-container-down .card-down .left_site_down .box_title span {
-  border: 1px solid black;
+  border: 1px solid #0000001f;
   border-radius: 5px;
   color: black;
   width: Fixed (28px) px;
