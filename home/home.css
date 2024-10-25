@@ -791,3 +791,182 @@ footer .down_navigate .economic p {
   text-align: left;
   color: var(--black-50, #1c1c1c80);
 }
+
+/* Для устройств с шириной экрана до 1200px */
+@media (max-width: 1200px) {
+  .container_inner {
+    padding: 0 20px;
+  }
+
+  main {
+    padding: 40px 60px;
+    height: auto;
+  }
+
+  main .left_main_site .title h1 {
+    font-size: 48px;
+    line-height: 56px;
+    width: 100%;
+  }
+
+  main .button_main {
+    max-width: 180px;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .right_site_application .top input,
+  .right_site_application .middle input {
+    width: 100%;
+  }
+
+  .contact {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 60px;
+    gap: 50px;
+  }
+
+  footer .top_footer,
+  footer .under_navigate {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Для устройств с шириной экрана до 768px */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  header .navigate nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .widgets {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main {
+    padding: 30px;
+    height: auto;
+  }
+
+  main .left_main_site .title h1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .card_container {
+    padding: 20px;
+  }
+
+  .partnership_cards {
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .left_site_application {
+    width: 400px;
+  }
+
+  .partnership_cards {
+    flex-direction: column;
+    gap: 55px;
+    padding: 20px;
+  }
+
+  .contact_card p {
+    width: 434px;
+    font-size: 20px;
+    line-height: 27px;
+    color: #1c1c1ce5;
+  }
+
+  .application {
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 40px;
+    height: fit-content;
+    gap: 30px;
+  }
+
+  footer .top_footer,
+  footer .under_navigate,
+  footer .down_navigate {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  footer .down_navigate {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Для устройств с шириной экрана до 480px */
+@media (max-width: 480px) {
+  header {
+    margin-top: 20px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  main .left_main_site .title h1 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .button_main {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .contact_card {
+    padding: 20px;
+  }
+
+  .contact_card p {
+    width: 100%;
+  }
+
+  .faq-container {
+    padding: 20px;
+  }
+
+  footer {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  footer .top_footer,
+  footer .under_navigate,
+  footer .down_navigate {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
