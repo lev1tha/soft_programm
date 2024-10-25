@@ -551,14 +551,14 @@ main .button_main a {
 /* footer */
 
 footer {
-  margin-top: 20px;
+  margin-top: 100px;
   background-color: var(--basic-color);
   padding: 100px;
   border-radius: 80px;
 
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  gap: 100px;
+  height: 750px;
 }
 
 footer .top_footer {
@@ -606,14 +606,188 @@ footer .maker a {
   font-weight: 400;
   font-family: var(--global-font);
 }
-/* Адаптация для экрана
-@media (max-width: 600px) {
-  .card {
-      width: 150px;
-      height: 180px;
-  }
+footer .developed p {
+  margin-top: 100px;
+}
+footer .developed p {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: -0.011em;
+  text-align: left;
+  color: #1e1e1e;
+}
 
-  .card-text {
-      font-size: 16px;
-  }
-} */
+footer .top_navigate nav {
+  display: flex;
+  gap: 28px;
+}
+
+footer .top_navigate nav a {
+  font-family: var(--global-font);
+
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+  line-height: 21.6px;
+}
+
+footer .under_navigate {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+footer .under_navigate .licences {
+  width: Fixed (230px) px;
+  height: Hug (234px) px;
+  padding: 12px 0px 12px 0px;
+  gap: 16px;
+  border-radius: 24px 0px 0px 0px;
+  opacity: 0px;
+}
+footer .under_navigate .licences h1 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.6px;
+  text-align: center;
+}
+footer .under_navigate .licences p {
+  width: Hug (189px) px;
+  height: Hug (172px) px;
+  gap: 8px;
+  opacity: 0px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+  color: var(--black-50, #1c1c1c80);
+}
+
+footer .under_navigate .model {
+  width: Hug (249px) px;
+  height: Hug (204px) px;
+  padding: 12px 0px 12px 0px;
+  gap: 16px;
+  border-radius: 24px 0px 0px 0px;
+  opacity: 0px;
+}
+
+footer .under_navigate .model h1 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.6px;
+  text-align: center;
+}
+footer .under_navigate .model p {
+  width: Hug (189px) px;
+  height: Hug (172px) px;
+  gap: 8px;
+  opacity: 0px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+  color: var(--black-50, #1c1c1c80);
+}
+
+footer .under_navigate .instalation {
+  width: Hug (249px) px;
+  height: Hug (204px) px;
+  padding: 12px 0px 12px 0px;
+  gap: 16px;
+  border-radius: 24px 0px 0px 0px;
+  opacity: 0px;
+}
+
+footer .under_navigate .instalation h1 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.6px;
+  text-align: center;
+}
+
+footer .under_navigate .fresh {
+  width: Hug (249px) px;
+  height: Hug (204px) px;
+  padding: 12px 0px 12px 0px;
+  gap: 16px;
+  border-radius: 24px 0px 0px 0px;
+  opacity: 0px;
+}
+footer .under_navigate .fresh h1 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.6px;
+  text-align: center;
+}
+
+footer .down_navigate {
+  display: flex;
+  gap: 50px;
+}
+
+footer .down_navigate .server {
+  width: Hug (230px) px;
+  height: Hug (144px) px;
+  padding: 12px 0px 12px 0px;
+  gap: 16px;
+  border-radius: 24px 0px 0px 0px;
+  opacity: 0px;
+}
+footer .down_navigate .server h1 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.6px;
+  text-align: center;
+}
+footer .down_navigate .server p {
+  width: Hug (189px) px;
+  height: Hug (172px) px;
+  gap: 8px;
+  opacity: 0px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+  color: var(--black-50, #1c1c1c80);
+}
+
+footer .down_navigate .economic {
+  width: Hug (230px) px;
+  height: Hug (144px) px;
+  padding: 12px 0px 12px 0px;
+  gap: 16px;
+  border-radius: 24px 0px 0px 0px;
+  opacity: 0px;
+}
+footer .down_navigate .economic h1 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.6px;
+  text-align: center;
+}
+footer .down_navigate .economic p {
+  width: Hug (189px) px;
+  height: Hug (172px) px;
+  gap: 8px;
+  opacity: 0px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+  color: var(--black-50, #1c1c1c80);
+}
