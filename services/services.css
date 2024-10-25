@@ -265,7 +265,6 @@ main .card-container .card .right_site_map .box {
   border-radius: 80px;
   border: 2px solid var(--Basic, #fbbb00);
   border-radius: 80px;
-
 }
 
 main .card-container .card .right_site_map .box_title h1 {
@@ -520,7 +519,6 @@ main .card-container .card .left_site_map .box_2 p:hover > span {
   border-radius: 80px;
   border: 2px 0px 0px 0px;
   opacity: 0px;
-
 }
 
 .main .card-container-down .card-down .left_site_down .box_2 img {
@@ -558,6 +556,23 @@ main .card-container .card .left_site_map .box_2 p:hover > span {
   height: Fixed (28px) px;
   border: 1px 0px 0px 0px;
   opacity: 0px;
+}
+
+.main .card-container-down .card-down .left_site_down .box_title p:hover {
+  color: black;
+  transition: 0.5s ease-in-out;
+}
+
+.main
+  .card-container-down
+  .card-down
+  .left_site_down
+  .box_title
+  p:hover
+  > span {
+  color: #fbbb00;
+  background-color: black;
+  transition: 0.5s ease-in-out;
 }
 
 /* application */
