@@ -353,18 +353,7 @@ footer .maker a {
   font-weight: 400;
   font-family: var(--global-font);
 }
-footer .developed p {
-  margin-top: 100px;
-}
-footer .developed p {
-  font-family: Inter;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 21px;
-  letter-spacing: -0.011em;
-  text-align: left;
-  color: #1e1e1e;
-}
+
 
 footer .top_navigate nav {
   display: flex;
@@ -401,7 +390,7 @@ footer .under_navigate .licences h1 {
   font-size: 16px;
   font-weight: 600;
   line-height: 21.6px;
-  text-align: center;
+  text-align: left;
 }
 footer .under_navigate .licences p {
   width: Hug (189px) px;
@@ -484,7 +473,7 @@ footer .down_navigate {
 }
 
 footer .down_navigate .server {
-  width: Hug (230px) px;
+  width: Hug (300px) px;
   height: Hug (144px) px;
   padding: 12px 0px 12px 0px;
   gap: 16px;
@@ -496,13 +485,9 @@ footer .down_navigate .server h1 {
   font-size: 16px;
   font-weight: 600;
   line-height: 21.6px;
-  text-align: center;
 }
 footer .down_navigate .server p {
-  width: Hug (189px) px;
-  height: Hug (172px) px;
-  gap: 8px;
-  opacity: 0px;
+
   font-family: Poppins;
   font-size: 16px;
   font-weight: 400;
@@ -538,6 +523,8 @@ footer .down_navigate .economic p {
   text-align: left;
   color: var(--black-50, #1c1c1c80);
 }
+
+
 
 /* Адаптивность для планшетов (от 768px до 1200px) */
 @media (max-width: 1200px) {

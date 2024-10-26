@@ -36,7 +36,7 @@ header .navigate nav .drop-menu {
   overflow: hidden;
 }
 
-header .navigate nav li:hover > .drop-menu {
+header .navigate nav span:hover > .drop-menu {
   display: initial;
   transition: 0.5s ease-in-out;
 }
@@ -144,7 +144,7 @@ header .navigate nav .drop-menu .fresh h1 {
   text-align: center;
 }
 
-header .navigate nav .drop-menu .server {
+header .navigate nav .drop-menu .server-up {
   width: Hug (230px) px;
   height: Hug (144px) px;
   padding: 12px 0px 12px 0px;
@@ -153,14 +153,14 @@ header .navigate nav .drop-menu .server {
   opacity: 0px;
 }
 
-header .navigate nav .drop-menu .server h1 {
+header .navigate nav .drop-menu  .server-up h1 {
   font-family: Poppins;
   font-size: 14px;
   font-weight: 600;
   line-height: 21.6px;
   text-align: center;
 }
-header .navigate nav .drop-menu .server p {
+header .navigate nav .drop-menu .server-up p {
   width: Hug (189px) px;
   height: Hug (172px) px;
   font-family: Poppins;

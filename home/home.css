@@ -425,7 +425,7 @@ main .button_main a {
 }
 
 .faq-container h2 {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -490,17 +490,21 @@ main .button_main a {
   display: block;
 }
 
+
+
 .icon-toggle.active .down-arrow {
   display: none;
 }
 
 .icon-toggle.active .up-arrow {
   display: block;
+  color:  var(--Basic, #FBBB00);
 }
 
 .icon-toggle:hover {
-  background-color: #e5e5e5;
+  background-color: #000000;
 }
+
 
 .icon-toggle.active:hover {
   background-color: #333;
@@ -548,7 +552,7 @@ main .button_main a {
 .map_card > iframe {
   border-radius: 80px;
   height: 408px;
-  width: 700px;
+  width: 680px;
 }
 
 /* footer */
@@ -609,18 +613,7 @@ footer .maker a {
   font-weight: 400;
   font-family: var(--global-font);
 }
-footer .developed p {
-  margin-top: 100px;
-}
-footer .developed p {
-  font-family: Inter;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 21px;
-  letter-spacing: -0.011em;
-  text-align: left;
-  color: #1e1e1e;
-}
+
 
 footer .top_navigate nav {
   display: flex;

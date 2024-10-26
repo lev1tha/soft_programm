@@ -44,7 +44,7 @@ header .navigate nav .drop-menu {
   overflow: hidden;
 }
 
-header .navigate nav li:hover > .drop-menu {
+header .navigate nav span:hover > .drop-menu {
   display: initial;
   transition: 0.5s ease-in-out;
 }
@@ -748,18 +748,7 @@ footer .maker a {
   font-weight: 400;
   font-family: var(--global-font);
 }
-footer .developed p {
-  margin-top: 100px;
-}
-footer .developed p {
-  font-family: Inter;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 21px;
-  letter-spacing: -0.011em;
-  text-align: left;
-  color: #1e1e1e;
-}
+
 
 footer .top_navigate nav {
   display: flex;
