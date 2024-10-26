@@ -307,13 +307,14 @@ footer .under_navigate .licences {
   border-radius: 24px 0px 0px 0px;
   opacity: 0px;
 }
+
 footer .under_navigate .licences h1 {
   font-family: Poppins;
   font-size: 16px;
   font-weight: 600;
   line-height: 21.6px;
-  text-align: center;
 }
+
 footer .under_navigate .licences p {
   width: Hug (189px) px;
   height: Hug (172px) px;
@@ -341,8 +342,8 @@ footer .under_navigate .model h1 {
   font-size: 16px;
   font-weight: 600;
   line-height: 21.6px;
-  text-align: center;
 }
+
 footer .under_navigate .model p {
   width: Hug (189px) px;
   height: Hug (172px) px;
@@ -370,7 +371,6 @@ footer .under_navigate .instalation h1 {
   font-size: 16px;
   font-weight: 600;
   line-height: 21.6px;
-  text-align: center;
 }
 
 footer .under_navigate .fresh {
@@ -381,12 +381,12 @@ footer .under_navigate .fresh {
   border-radius: 24px 0px 0px 0px;
   opacity: 0px;
 }
+
 footer .under_navigate .fresh h1 {
   font-family: Poppins;
   font-size: 16px;
   font-weight: 600;
   line-height: 21.6px;
-  text-align: center;
 }
 
 footer .down_navigate {
@@ -407,8 +407,8 @@ footer .down_navigate .server h1 {
   font-size: 16px;
   font-weight: 600;
   line-height: 21.6px;
-  text-align: center;
 }
+
 footer .down_navigate .server p {
   width: Hug (189px) px;
   height: Hug (172px) px;
@@ -430,13 +430,14 @@ footer .down_navigate .economic {
   border-radius: 24px 0px 0px 0px;
   opacity: 0px;
 }
+
 footer .down_navigate .economic h1 {
   font-family: Poppins;
   font-size: 16px;
   font-weight: 600;
   line-height: 21.6px;
-  text-align: center;
 }
+
 footer .down_navigate .economic p {
   width: Hug (189px) px;
   height: Hug (172px) px;

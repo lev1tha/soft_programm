@@ -354,7 +354,6 @@ footer .maker a {
   font-family: var(--global-font);
 }
 
-
 footer .top_navigate nav {
   display: flex;
   gap: 28px;
@@ -385,13 +384,14 @@ footer .under_navigate .licences {
   border-radius: 24px 0px 0px 0px;
   opacity: 0px;
 }
+
 footer .under_navigate .licences h1 {
   font-family: Poppins;
   font-size: 16px;
   font-weight: 600;
   line-height: 21.6px;
-  text-align: left;
 }
+
 footer .under_navigate .licences p {
   width: Hug (189px) px;
   height: Hug (172px) px;
@@ -419,8 +419,8 @@ footer .under_navigate .model h1 {
   font-size: 16px;
   font-weight: 600;
   line-height: 21.6px;
-  text-align: center;
 }
+
 footer .under_navigate .model p {
   width: Hug (189px) px;
   height: Hug (172px) px;
@@ -448,7 +448,6 @@ footer .under_navigate .instalation h1 {
   font-size: 16px;
   font-weight: 600;
   line-height: 21.6px;
-  text-align: center;
 }
 
 footer .under_navigate .fresh {
@@ -459,12 +458,12 @@ footer .under_navigate .fresh {
   border-radius: 24px 0px 0px 0px;
   opacity: 0px;
 }
+
 footer .under_navigate .fresh h1 {
   font-family: Poppins;
   font-size: 16px;
   font-weight: 600;
   line-height: 21.6px;
-  text-align: center;
 }
 
 footer .down_navigate {
@@ -473,7 +472,7 @@ footer .down_navigate {
 }
 
 footer .down_navigate .server {
-  width: Hug (300px) px;
+  width: Hug (230px) px;
   height: Hug (144px) px;
   padding: 12px 0px 12px 0px;
   gap: 16px;
@@ -486,8 +485,12 @@ footer .down_navigate .server h1 {
   font-weight: 600;
   line-height: 21.6px;
 }
-footer .down_navigate .server p {
 
+footer .down_navigate .server p {
+  width: Hug (189px) px;
+  height: Hug (172px) px;
+  gap: 8px;
+  opacity: 0px;
   font-family: Poppins;
   font-size: 16px;
   font-weight: 400;
@@ -504,13 +507,14 @@ footer .down_navigate .economic {
   border-radius: 24px 0px 0px 0px;
   opacity: 0px;
 }
+
 footer .down_navigate .economic h1 {
   font-family: Poppins;
   font-size: 16px;
   font-weight: 600;
   line-height: 21.6px;
-  text-align: center;
 }
+
 footer .down_navigate .economic p {
   width: Hug (189px) px;
   height: Hug (172px) px;
@@ -523,8 +527,6 @@ footer .down_navigate .economic p {
   text-align: left;
   color: var(--black-50, #1c1c1c80);
 }
-
-
 
 /* Адаптивность для планшетов (от 768px до 1200px) */
 @media (max-width: 1200px) {
