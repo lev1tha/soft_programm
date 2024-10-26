@@ -24,12 +24,12 @@ header {
   justify-content: space-between;
 }
 
-header .navigate nav {
+header .navigation-menu nav {
   display: flex;
   gap: 28px;
 }
 
-header .navigate nav a {
+header .navigation-menu nav a {
   font-family: var(--global-font);
 
   text-decoration: none;
@@ -39,17 +39,17 @@ header .navigate nav a {
   line-height: 21.6px;
 }
 
-header .navigate nav .drop-menu {
+header .navigation-menu nav .drop-menu {
   display: none;
   overflow: hidden;
 }
 
-header .navigate nav span:hover > .drop-menu {
+header .navigation-menu nav span:hover > .drop-menu {
   display: initial;
   transition: 0.5s ease-in-out;
 }
 
-header .navigate nav .drop-menu-after {
+header .navigation-menu nav .drop-menu-after {
   display: flex;
   left: 200px;
   position: absolute;
@@ -62,7 +62,7 @@ header .navigate nav .drop-menu-after {
   border-radius: 10px;
 }
 
-header .navigate nav .drop-menu .licences {
+header .navigation-menu nav .drop-menu .licences {
   width: Fixed (300px) px;
   padding: 12px 0px 12px 0px;
   gap: 16px;
@@ -70,7 +70,7 @@ header .navigate nav .drop-menu .licences {
   opacity: 0px;
 }
 
-header .navigate nav .drop-menu .licences h1 {
+header .navigation-menu nav .drop-menu .licences h1 {
   font-family: Poppins;
   font-size: 14px;
   font-weight: 600;
@@ -78,7 +78,7 @@ header .navigate nav .drop-menu .licences h1 {
   text-align: center;
 }
 
-header .navigate nav .drop-menu .licences p {
+header .navigation-menu nav .drop-menu .licences p {
   width: Hug (150px) px;
   font-family: Poppins;
   font-size: 14px;
@@ -88,7 +88,7 @@ header .navigate nav .drop-menu .licences p {
   color: var(--black-50, #1c1c1c80);
 }
 
-header .navigate nav .drop-menu .model {
+header .navigation-menu nav .drop-menu .model {
   width: Hug (249px) px;
   height: Hug (204px) px;
   padding: 12px 0px 12px 0px;
@@ -97,7 +97,7 @@ header .navigate nav .drop-menu .model {
   opacity: 0px;
 }
 
-header .navigate nav .drop-menu .model h1 {
+header .navigation-menu nav .drop-menu .model h1 {
   font-family: Poppins;
   font-size: 14px;
   font-weight: 600;
@@ -105,7 +105,7 @@ header .navigate nav .drop-menu .model h1 {
   text-align: center;
 }
 
-header .navigate nav .drop-menu .model p {
+header .navigation-menu nav .drop-menu .model p {
   width: Hug (189px) px;
   height: Hug (172px) px;
   gap: 8px;
@@ -118,7 +118,7 @@ header .navigate nav .drop-menu .model p {
   color: var(--black-50, #1c1c1c80);
 }
 
-header .navigate nav .drop-menu .instalation {
+header .navigation-menu nav .drop-menu .instalation {
   width: Hug (249px) px;
   height: Hug (204px) px;
   padding: 12px 0px 12px 0px;
@@ -127,7 +127,7 @@ header .navigate nav .drop-menu .instalation {
   opacity: 0px;
 }
 
-header .navigate nav .drop-menu .instalation h1 {
+header .navigation-menu nav .drop-menu .instalation h1 {
   font-family: Poppins;
   font-size: 14px;
   font-weight: 600;
@@ -135,7 +135,7 @@ header .navigate nav .drop-menu .instalation h1 {
   text-align: center;
 }
 
-header .navigate nav .drop-menu .fresh {
+header .navigation-menu nav .drop-menu .fresh {
   width: Hug (249px) px;
   height: Hug (204px) px;
   padding: 12px 0px 12px 0px;
@@ -144,7 +144,7 @@ header .navigate nav .drop-menu .fresh {
   opacity: 0px;
 }
 
-header .navigate nav .drop-menu .fresh h1 {
+header .navigation-menu nav .drop-menu .fresh h1 {
   font-family: Poppins;
   font-size: 14px;
   font-weight: 600;
@@ -152,7 +152,7 @@ header .navigate nav .drop-menu .fresh h1 {
   text-align: center;
 }
 
-header .navigate nav .drop-menu .server {
+header .navigation-menu nav .drop-menu .server {
   width: Hug (230px) px;
   height: Hug (144px) px;
   padding: 12px 0px 12px 0px;
@@ -161,7 +161,7 @@ header .navigate nav .drop-menu .server {
   opacity: 0px;
 }
 
-header .navigate nav .drop-menu .server h1 {
+header .navigation-menu nav .drop-menu .server h1 {
   font-family: Poppins;
   font-size: 14px;
   font-weight: 600;
@@ -169,7 +169,7 @@ header .navigate nav .drop-menu .server h1 {
   text-align: center;
 }
 
-header .navigate nav .drop-menu .server p {
+header .navigation-menu nav .drop-menu .server p {
   width: Hug (189px) px;
   height: Hug (172px) px;
   font-family: Poppins;
@@ -180,7 +180,7 @@ header .navigate nav .drop-menu .server p {
   color: var(--black-50, #1c1c1c80);
 }
 
-header .navigate nav .drop-menu .economic {
+header .navigation-menu nav .drop-menu .economic {
   width: Hug (230px) px;
   height: Hug (144px) px;
   padding: 12px 0px 12px 0px;
@@ -189,7 +189,7 @@ header .navigate nav .drop-menu .economic {
   opacity: 0px;
 }
 
-header .navigate nav .drop-menu .economic h1 {
+header .navigation-menu nav .drop-menu .economic h1 {
   font-family: Poppins;
   font-size: 14px;
   font-weight: 600;
@@ -197,7 +197,7 @@ header .navigate nav .drop-menu .economic h1 {
   text-align: center;
 }
 
-header .navigate nav .drop-menu .economic p {
+header .navigation-menu nav .drop-menu .economic p {
   width: Hug (189px) px;
   height: Hug (172px) px;
   gap: 8px;

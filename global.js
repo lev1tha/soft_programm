@@ -11,11 +11,10 @@ var swiper = new Swiper(".swiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-    dynamicBullets: true, // Включаем динамические точки
+    dynamicBullets: true,
   },
 });
 
-// Получаем все элементы FAQ
 document.querySelectorAll(".faq-question").forEach((item) => {
   item.addEventListener("click", () => {
     const answer = item.nextElementSibling;
@@ -38,4 +37,20 @@ document.querySelectorAll(".faq-question").forEach((item) => {
       iconToggle.classList.remove("active");
     }
   });
+});
+
+const burgerIcon = document.getElementById("burger-icon");
+const navigationMenu = document.querySelector(".navigation-menu");
+
+document.addEventListener("DOMContentLoaded", () => {
+  const burgerIcon = document.getElementById("burger-icon");
+  const navigationMenu = document.querySelector(".navigation-menu");
+
+  if (burgerIcon && navigationMenu) {
+    burgerIcon.addEventListener("click", () => {
+      navigationMenu.classList.toggle("open");
+    });
+  } else {
+    console.error("Element not found: burgerIcon or navigationMenu is null");
+  }
 });

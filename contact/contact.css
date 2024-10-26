@@ -19,12 +19,12 @@ header {
   justify-content: space-between;
 }
 
-header .navigate nav {
+header .navigation-menu nav {
   display: flex;
   gap: 28px;
 }
 
-header .navigate nav a {
+header .navigation-menu nav a {
   font-family: var(--global-font);
 
   text-decoration: none;
@@ -33,7 +33,7 @@ header .navigate nav a {
   color: black;
   line-height: 21.6px;
 }
-header .navigate nav span {
+header .navigation-menu nav span {
   font-family: var(--global-font);
 
   text-decoration: none;
@@ -539,12 +539,12 @@ footer .down_navigate .economic p {
     margin-top: 8px;
   }
 
-  header .navigate nav {
+  header .navigation-menu nav {
     display: none;
     gap: 28px;
   }
 
-  header .navigate nav a {
+  header .navigation-menu nav a {
     font-family: var(--global-font);
 
     text-decoration: none;
@@ -553,7 +553,7 @@ footer .down_navigate .economic p {
     color: black;
     line-height: 21.6px;
   }
-  header .navigate nav span {
+  header .navigation-menu nav span {
     font-family: var(--global-font);
 
     text-decoration: none;
@@ -1076,12 +1076,12 @@ footer .down_navigate .economic p {
     justify-content: space-between;
   }
 
-  header .navigate nav {
+  header .navigation-menu nav {
     display: none;
     gap: 28px;
   }
 
-  header .navigate nav a {
+  header .navigation-menu nav a {
     font-family: var(--global-font);
 
     text-decoration: none;
@@ -1090,7 +1090,7 @@ footer .down_navigate .economic p {
     color: black;
     line-height: 21.6px;
   }
-  header .navigate nav span {
+  header .navigation-menu nav span {
     font-family: var(--global-font);
 
     text-decoration: none;

@@ -18,12 +18,12 @@ header {
   justify-content: space-between;
 }
 
-header .navigate nav {
+header .navigation-menu nav {
   display: flex;
   gap: 28px;
 }
 
-header .navigate nav a {
+header .navigation-menu nav a {
   font-family: var(--global-font);
 
   text-decoration: none;
@@ -490,21 +490,18 @@ main .button_main a {
   display: block;
 }
 
-
-
 .icon-toggle.active .down-arrow {
   display: none;
 }
 
 .icon-toggle.active .up-arrow {
   display: block;
-  color:  var(--Basic, #FBBB00);
+  color: var(--Basic, #fbbb00);
 }
 
 .icon-toggle:hover {
   background-color: #000000;
 }
-
 
 .icon-toggle.active:hover {
   background-color: #333;
@@ -613,7 +610,6 @@ footer .maker a {
   font-weight: 400;
   font-family: var(--global-font);
 }
-
 
 footer .top_navigate nav {
   display: flex;
@@ -789,6 +785,8 @@ footer .down_navigate .economic p {
   color: var(--black-50, #1c1c1c80);
 }
 
+
+
 /* Для устройств с шириной экрана до 1200px */
 @media (max-width: 1200px) {
   .container_inner {
@@ -798,6 +796,10 @@ footer .down_navigate .economic p {
   main {
     padding: 40px 60px;
     height: auto;
+  }
+
+  header .navigation-menu nav {
+    gap: 12px;
   }
 
   main .left_main_site .title h1 {
@@ -844,11 +846,11 @@ footer .down_navigate .economic p {
 
 /* Для устройств с шириной экрана до 768px */
 @media (max-width: 768px) {
-  header {
+  /* header {
     flex-direction: column;
-  }
+  } */
 
-  header .navigate nav {
+  header .navigation-menu nav {
     flex-direction: column;
     gap: 10px;
   }
@@ -856,6 +858,10 @@ footer .down_navigate .economic p {
   .widgets {
     flex-direction: column;
     gap: 10px;
+  }
+
+  .widgets .catalog button {
+    display: none;
   }
 
   main {

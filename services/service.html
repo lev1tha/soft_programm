@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./services.css" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,14 +33,24 @@
     <div class="container">
       <div class="container_inner">
         <header>
+          <div class="burger-menu">
+            <div class="burger-icon" id="burger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
           <div class="logotype">
             <img src="../assets/logo.svg" alt="logotype of company" />
           </div>
-          <div class="navigate">
+          <div class="navigation-menu">
             <nav>
               <a href="../home/home.html">Project</a>
               <span>
-                <a href="../services/service.html">Service <i class='bx bx-chevron-down'></i></a>
+                <a href="../services/service.html"
+                  >Service <i class="bx bx-chevron-down"></i
+                ></a>
                 <div class="drop-menu">
                   <div class="drop-menu-after">
                     <div class="licences">
@@ -93,6 +106,7 @@
             </div>
           </div>
         </header>
+
         <main>
           <div class="card-container">
             <div class="card">
@@ -175,6 +189,7 @@
             </div>
           </div>
         </main>
+
         <main class="main">
           <div class="card-container-down">
             <div class="card-down">
@@ -257,6 +272,7 @@
             </div>
           </div>
         </main>
+
         <section class="application">
           <div class="left_site_application">
             <div class="application-title">
@@ -298,6 +314,7 @@
             </button>
           </div>
         </section>
+
         <footer>
           <div class="left_site_footer">
             <!-- flex-direction column -->
@@ -338,7 +355,6 @@
             <div class="maker">
               <a>ElDev Digital</a>
             </div>
-          
           </div>
           <div class="right_site_footer">
             <div class="top_navigate">
@@ -401,5 +417,7 @@
         </footer>
       </div>
     </div>
+
+    <script src="../global.js" />
   </body>
 </html>

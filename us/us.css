@@ -18,12 +18,12 @@ header {
   justify-content: space-between;
 }
 
-header .navigate nav {
+header .navigation-menu nav {
   display: flex;
   gap: 28px;
 }
 
-header .navigate nav a {
+header .navigation-menu nav a {
   font-family: var(--global-font);
 
   text-decoration: none;

@@ -18,12 +18,12 @@ header {
   justify-content: space-between;
 }
 
-header .navigate nav {
+header .navigation-menu nav {
   display: flex;
   gap: 28px;
 }
 
-header .navigate nav a {
+header .navigation-menu nav a {
   font-family: var(--global-font);
 
   text-decoration: none;
@@ -539,12 +539,12 @@ footer .down_navigate .economic p {
     align-items: center;
   }
 
-  header .navigate nav {
+  header .navigation-menu nav {
     flex-direction: column;
     gap: 12px;
   }
 
-  header .navigate nav a {
+  header .navigation-menu nav a {
     font-size: 14px;
   }
 
@@ -615,7 +615,7 @@ footer .down_navigate .economic p {
 }
 
 /* Адаптивность для больших смартфонов (от 480px до 767px) */
-@media (max-width: 767px) {
+@media (max-width: 780px) {
   .container {
     padding: 0;
   }
@@ -629,12 +629,12 @@ footer .down_navigate .economic p {
     align-items: center;
   }
 
-  header .navigate nav {
+  header .navigation-menu nav {
     flex-direction: column;
     gap: 10px;
   }
 
-  header .navigate nav a {
+  header .navigation-menu nav a {
     font-size: 12px;
   }
 
@@ -720,7 +720,7 @@ footer .down_navigate .economic p {
     padding: 0 10px;
   }
 
-  header .navigate nav a {
+  header .navigation-menu nav a {
     font-size: 10px;
   }
 
