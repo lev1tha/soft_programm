@@ -277,3 +277,9 @@ header .navigation-menu nav .drop-menu .economic p {
     display: none;
   }
 }
+
+@media (max-width: 768px) {
+  .left_site_application {
+    width: 228px;
+  }
+}

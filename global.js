@@ -1,20 +1,3 @@
-var swiper = new Swiper(".swiper", {
-  effect: "fade",
-  fadeEffect: { crossFade: true },
-  speed: 800,
-  loop: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-  allowTouchMove: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
-  },
-});
-
 document.querySelectorAll(".faq-question").forEach((item) => {
   item.addEventListener("click", () => {
     const answer = item.nextElementSibling;
@@ -53,4 +36,21 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     console.error("Element not found: burgerIcon or navigationMenu is null");
   }
+});
+
+var swiper = new Swiper(".swiper", {
+  effect: "fade",
+  fadeEffect: { crossFade: true },
+  speed: 800,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  allowTouchMove: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
 });

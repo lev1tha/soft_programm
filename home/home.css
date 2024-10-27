@@ -785,8 +785,6 @@ footer .down_navigate .economic p {
   color: var(--black-50, #1c1c1c80);
 }
 
-
-
 /* Для устройств с шириной экрана до 1200px */
 @media (max-width: 1200px) {
   .container_inner {
@@ -888,7 +886,27 @@ footer .down_navigate .economic p {
   }
 
   .left_site_application {
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .left_site_application .title h1 {
+    font-size: 18px;
+    line-height: 23.2px;
+    font-weight: 700;
+  }
+
+  .left_site_application .suptitle p {
+    color: #1c1c1ce5;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 300;
+  }
+  
+  .correct p {
+    font-size: 12px;
+    line-height: 15.6px;
+    font-weight: 300;
   }
 
   .partnership_cards {
