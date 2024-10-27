@@ -1008,7 +1008,7 @@ footer .down_navigate .economic p {
     border-radius: 80px;
     border: 2px solid var(--Basic, #fbbb00);
     border-radius: 80px;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   main .card-container .card .left_site_map .box_2 img {
@@ -1050,7 +1050,7 @@ footer .down_navigate .economic p {
 
   /* 2card */
   .main {
-    margin-top: 100px;
+    margin-top: 50px;
   }
   .main .card-container-down {
     margin-top: 50px;
@@ -1058,24 +1058,30 @@ footer .down_navigate .economic p {
   }
 
   .main .card-down {
-    display: flex;
+    display: block;
     margin-top: 50px;
   }
 
   .main .card-container-down .card-down .right_site_down .box {
-    display: flex;
+    display: block;
     justify-content: start;
     align-items: center;
-    width: 900px;
-    height: 350px;
+    width: 430px;
+    height: 700px;
     top: 255px;
     left: 240px;
+    margin: 0 auto;
     gap: 0px;
     border-radius: 80px;
-    border: 2px 0px 0px 0px;
-    opacity: 0px;
-    background: var(--Basic, #ffffff);
     border: 2px solid var(--Basic, #fbbb00);
+    margin-top: 50px;
+    border-radius: 80px;
+  }
+  .main .card-container-down .card-down .right_site_down .box img {
+    margin-left: 40px;
+  }
+
+  .main .card-container-down .card-down .right_site_down .box_title {
     margin-left: 50px;
   }
 
@@ -1108,17 +1114,23 @@ footer .down_navigate .economic p {
   }
 
   .main .card-container-down .card-down .right_site_down .box_1 {
-    display: flex;
+    display: block;
     justify-content: start;
     align-items: center;
-    width: 900px;
-    height: 350px;
-    margin-top: 50px;
-    border: 2px solid var(--Basic, #fbbb00);
+    width: 430px;
+    height: 700px;
+    top: 255px;
+    left: 240px;
+    margin: 0 auto;
+    gap: 0px;
     border-radius: 80px;
-    border: 2px 0px 0px 0px;
-    opacity: 0px;
-    margin-left: 50px;
+    border: 2px solid var(--Basic, #fbbb00);
+    margin-top: 50px;
+    border-radius: 80px;
+  }
+
+  .main .card-container-down .card-down .right_site_down .box_1 img {
+    margin-left: 40px;
   }
 
   .main .card-container-down .card-down .left_site_down {
@@ -1291,6 +1303,266 @@ footer .down_navigate .economic p {
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
+  main .card {
+    display: block;
+  }
+
+  main .card-container .card .right_site_map .box {
+    display: block;
+    justify-content: start;
+    align-items: center;
+    width: 430px;
+    height: 700px;
+    top: 255px;
+    left: 240px;
+    gap: 0px;
+    border-radius: 80px;
+    border: 2px solid var(--Basic, #fbbb00);
+    border-radius: 80px;
+    margin: 0 auto;
+  }
+  main .card .right_site_map .box_title {
+    margin-left: 50px;
+  }
+
+  main .card-container .card .right_site_map .box_title h1 {
+    font-family: Poppins;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70.4px;
+    text-align: left;
+  }
+
+  main .card-container .card .right_site_map .box_title p {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    color: var(--black-50, #1c1c1c80);
+    cursor: pointer;
+  }
+
+  main .card-container .card .right_site_map .box_title span {
+    border: 1px solid #0000001f;
+    border-radius: 5px;
+    color: black;
+    width: Fixed (28px) px;
+    height: Fixed (28px) px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+  }
+
+  main .card-container .card .right_site_map .box_1 {
+    display: block;
+    justify-content: start;
+    align-items: center;
+    width: 430px;
+    height: 700px;
+    top: 255px;
+    left: 240px;
+    margin: 0 auto;
+    gap: 0px;
+    border-radius: 80px;
+    border: 2px solid var(--Basic, #fbbb00);
+    margin-top: 50px;
+    border-radius: 80px;
+  }
+
+  main .card-container .card .left_site_map {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  main .card-container .card .left_site_map .box_2 {
+    display: block;
+    justify-content: start;
+    align-items: center;
+    width: 430px;
+    height: 700px;
+    top: 255px;
+    left: 240px;
+    gap: 0px;
+    border-radius: 80px;
+    border: 2px solid var(--Basic, #fbbb00);
+    border-radius: 80px;
+    margin-left: 10px;
+    margin: 0 auto;
+  }
+
+  main .card-container .card .left_site_map .box_2 img {
+    margin-left: 50px;
+  }
+
+  main .card-container .card .left_site_map .box_title {
+    margin-left: 50px;
+  }
+
+  main .card-container .card .left_site_map .box_title h1 {
+    width: 200px;
+    font-family: Poppins;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70.4px;
+    text-align: center;
+  }
+
+  main .card-container .card .left_site_map .box_title p {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    color: var(--black-50, #1c1c1c80);
+    cursor: pointer;
+  }
+
+  main .card-container .card .left_site_map .box_title span {
+    border: 1px solid #0000001f;
+    border-radius: 5px;
+    color: black;
+    width: Fixed (28px) px;
+    height: Fixed (28px) px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+  }
+
+  /* 2card */
+  .main {
+    margin-top: 50px;
+  }
+  .main .card-container-down {
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .main .card-down {
+    display: block;
+    margin-top: 50px;
+  }
+
+  .main .card-container-down .card-down .right_site_down .box {
+    display: block;
+    justify-content: start;
+    align-items: center;
+    width: 430px;
+    height: 700px;
+    top: 255px;
+    left: 240px;
+    margin: 0 auto;
+    gap: 0px;
+    border-radius: 80px;
+    border: 2px solid var(--Basic, #fbbb00);
+    margin-top: 50px;
+    border-radius: 80px;
+  }
+  .main .card-container-down .card-down .right_site_down .box img {
+    margin-left: 40px;
+  }
+
+  .main .card-container-down .card-down .right_site_down .box_title {
+    margin-left: 50px;
+  }
+
+  .main .card-container-down .card-down .right_site_down .box_title h1 {
+    font-family: Poppins;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70.4px;
+    text-align: left;
+  }
+
+  .main .card-container-down .card-down .right_site_down .box_title p {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    color: var(--black-50, #1c1c1c80);
+    cursor: pointer;
+  }
+
+  .main .card-container-down .card-down .right_site_down .box_title span {
+    border: 1px solid #0000001f;
+    border-radius: 5px;
+    color: black;
+    width: Fixed (28px) px;
+    height: Fixed (28px) px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+  }
+
+  .main .card-container-down .card-down .right_site_down .box_1 {
+    display: block;
+    justify-content: start;
+    align-items: center;
+    width: 430px;
+    height: 700px;
+    top: 255px;
+    left: 240px;
+    margin: 0 auto;
+    gap: 0px;
+    border-radius: 80px;
+    border: 2px solid var(--Basic, #fbbb00);
+    margin-top: 50px;
+    border-radius: 80px;
+  }
+
+  .main .card-container-down .card-down .right_site_down .box_1 img {
+    margin-left: 40px;
+  }
+
+  .main .card-container-down .card-down .left_site_down {
+    display: flex;
+  }
+
+  .main .card-container-down .card-down .left_site_down .box_2 {
+    width: 430px;
+    height: 750px;
+    border: 2px solid var(--Basic, #fbbb00);
+    border-radius: 80px;
+    border: 2px 0px 0px 0px;
+    opacity: 0px;
+    margin: 0 auto;
+  }
+
+  .main .card-container-down .card-down .left_site_down .box_2 img {
+    margin-left: 50px;
+  }
+
+  .main .card-container-down .card-down .left_site_down .box_title {
+    margin-left: 50px;
+  }
+
+  .main .card-container-down .card-down .left_site_down .box_title h1 {
+    width: 200px;
+    font-family: Poppins;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70.4px;
+    text-align: center;
+  }
+
+  .main .card-container-down .card-down .left_site_down .box_title p {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    color: var(--black-50, #1c1c1c80);
+    cursor: pointer;
+  }
+
+  .main .card-container-down .card-down .left_site_down .box_title span {
+    border: 1px solid #0000001f;
+    border-radius: 5px;
+    color: black;
+    width: Fixed (28px) px;
+    height: Fixed (28px) px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+  }
+
   /* application */
 
   .application {
