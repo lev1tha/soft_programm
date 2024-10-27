@@ -296,11 +296,6 @@ header .navigation-menu nav a {
     padding: 0 20px;
   }
 
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
-
   header .navigation-menu nav {
     flex-direction: column;
     gap: 12px;
@@ -363,7 +358,7 @@ header .navigation-menu nav a {
     width: 100%;
   }
 
-  footer {
+  /* footer {
     flex-direction: column;
     padding: 60px;
     gap: 50px;
@@ -373,7 +368,7 @@ header .navigation-menu nav a {
   footer .under_navigate {
     flex-direction: column;
     gap: 20px;
-  }
+  } */
 }
 
 /* Адаптивность для больших смартфонов (от 480px до 767px) */
@@ -382,13 +377,13 @@ header .navigation-menu nav a {
     padding: 0;
   }
 
-  .container_inner {
-    padding: 0 20px;
+  .info_server_licence > article {
+    position: relative;
+    top: 0px;
   }
 
-  header {
-    flex-direction: column;
-    align-items: center;
+  .container_inner {
+    padding: 0 20px;
   }
 
   header .navigation-menu nav {
@@ -456,7 +451,7 @@ header .navigation-menu nav a {
     gap: 10px;
   }
 
-  footer {
+  /* footer {
     flex-direction: column;
     padding: 40px;
     height: fit-content;
@@ -473,7 +468,7 @@ header .navigation-menu nav a {
   footer .down_navigate {
     flex-direction: column;
     gap: 20px;
-  }
+  } */
 }
 
 /* Адаптивность для маленьких смартфонов (до 480px) */
@@ -514,7 +509,7 @@ header .navigation-menu nav a {
   .right_site_application .middle input {
     width: 100%;
   }
-
+  /* 
   footer {
     padding: 20px;
     gap: 20px;
@@ -525,5 +520,5 @@ header .navigation-menu nav a {
   footer .down_navigate {
     flex-direction: column;
     gap: 20px;
-  }
+  } */
 }

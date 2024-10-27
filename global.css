@@ -310,6 +310,73 @@ header .navigation-menu nav .drop-menu .economic p:hover {
   gap: 10px;
 }
 
+.application {
+  width: 100%;
+  margin-top: 100px;
+  background-color: var(--basic-color);
+  border-radius: 80px;
+  border: 2px solid #b48700;
+  padding: 100px;
+
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.right_site_application {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right_site_application .top p {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.right_site_application .top input {
+  width: 500px;
+  margin-top: 8px;
+  background-color: transparent;
+  padding: 10px 16px;
+  border: 1px solid #1c1c1c66;
+  border-radius: 32px;
+}
+
+.right_site_application .top input::placeholder {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #1c1c1c99;
+}
+
+.right_site_application .middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.right_site_application .middle input {
+  width: 230px;
+  margin-top: 8px;
+  background-color: transparent;
+  padding: 10px 16px;
+  border: 1px solid #1c1c1c66;
+  border-radius: 32px;
+}
+
+.right_site_application .middle input::placeholder {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #1c1c1c99;
+}
+
 footer {
   margin-top: 100px;
   background-color: var(--basic-color);
@@ -577,59 +644,13 @@ footer .down_navigate .ilustration_footer {
   bottom: -100px;
 }
 
-@media (max-width: 768px) {
-  .burger-menu {
-    display: block;
-  }
-
-  .navigation-menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    z-index: 100;
-  }
-
-  .navigation-menu.open {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .drop-menu {
-    position: relative;
-  }
-
-  .drop-menu-after {
-    display: none;
-  }
-
-  .drop-menu:hover .drop-menu-after {
-    display: block;
-    position: absolute;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 10px;
-    width: 100%;
-  }
-}
-
-@media (max-width: 1200px) {
-  header .navigation-menu nav {
-    gap: 12px;
-  }
-}
-
-@media (max-width: 896px) {
-  header .navigation-menu {
-    display: none;
-  }
-}
-
 /* Медиазапросы для адаптации */
 @media (max-width: 1200px) {
+  .right_site_application .top input,
+  .right_site_application .middle input {
+    width: 100%;
+  }
+
   footer {
     flex-direction: column; /* Вертикальное расположение */
     padding: 50px; /* Уменьшить отступы */
@@ -677,13 +698,136 @@ footer .down_navigate .ilustration_footer {
   }
 }
 
+@media (max-width: 1200px) {
+  header .navigation-menu nav {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 896px) {
+  header .navigation-menu {
+    display: none;
+  }
+
+  .application {
+    flex-direction: column;
+    padding: 40px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+    background-color: var(--basic-color);
+    border-radius: 80px;
+    border: 2px solid #b48700;
+    padding: 70px;
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .left_site_application .application-title h1 {
+    font-size: 32px;
+    line-height: 35.2px;
+    font-weight: 700;
+  }
+
+  .left_site_application .application-suptitle {
+    margin-top: 17px;
+  }
+
+  .left_site_application .application-suptitle p {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 300;
+  }
+
+  footer {
+    margin-top: 100px;
+    background-color: var(--basic-color);
+    padding: 100px;
+    border-radius: 40px;
+    position: relative;
+    display: flex;
+    gap: 32px;
+    height: 960px;
+  }
+
+  footer .down_navigate .ilustration_footer {
+    position: absolute;
+    right: 0px;
+    bottom: -20px;
+  }
+}
+
 @media (max-width: 768px) {
   header {
     padding: 0 42px;
   }
 
+  .burger-menu {
+    display: block;
+  }
+
+  .navigation-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 100;
+  }
+
+  .navigation-menu.open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .drop-menu {
+    position: relative;
+  }
+
+  .drop-menu-after {
+    display: none;
+  }
+
+  .drop-menu:hover .drop-menu-after {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .application {
+    border: 2px solid #b48700;
+    padding: 50px;
+    border-radius: 40px;
+  }
+
+  .left_site_application {
+    width: 500px;
+  }
+
+  .contact_card h1 {
+    font-size: 30px;
+    line-height: 31.2px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  .contact_card p {
+    width: 434px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1c1c1ce5;
+  }
+
   footer {
-    height: auto; /* Высота автоматически подстраивается под контент */
+    /* height: auto; Высота автоматически подстраивается под контент */
     padding: 20px; /* Уменьшить отступы */
   }
 
@@ -729,7 +873,8 @@ footer .down_navigate .ilustration_footer {
     width: 100%;
     margin-top: 20px;
     background-color: var(--basic-color);
-    border-radius: 80px;
+    border-radius: 40px;
+    padding: 40px;
     border: 2px solid #b48700;
 
     display: flex;
@@ -738,7 +883,7 @@ footer .down_navigate .ilustration_footer {
   }
 
   .left_site_application {
-    width: 500px;
+    width: 300px;
   }
 
   .left_site_application .application-title h1 {
@@ -807,6 +952,7 @@ footer .down_navigate .ilustration_footer {
     gap: 20px;
     width: 100%;
   }
+  
   .right_site_application .middle p {
     font-size: 12px;
   }
@@ -843,9 +989,17 @@ footer .down_navigate .ilustration_footer {
     cursor: pointer;
   }
 
+  .contact_card {
+    padding: 20px;
+  }
+
+  .contact_card p {
+    width: 100%;
+  }
+
   footer {
-    height: auto; /* Высота автоматически подстраивается под контент */
     padding: 20px; /* Уменьшить отступы */
+    height: 770px;
   }
 
   footer .top_footer .social {
@@ -876,11 +1030,11 @@ footer .down_navigate .ilustration_footer {
     display: none;
   }
 
-  footer .ilustration img {
+  footer .ilustration_footer img {
     width: 500px;
     height: 400px;
     position: relative;
     margin-bottom: 50px;
-    right: 100px;
+    right: -40px;
   }
 }

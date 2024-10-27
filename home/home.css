@@ -742,7 +742,7 @@ main .button_main a {
   footer {
     flex-direction: column;
     padding: 40px;
-    height: fit-content;
+    /* height: fit-content; */
     gap: 30px;
   }
 

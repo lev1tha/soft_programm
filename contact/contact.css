@@ -145,7 +145,7 @@ header .navigation-menu nav a {
 
 /* application */
 
-.application {
+/* .application {
   width: 100%;
   margin-top: 20px;
   background-color: var(--basic-color);
@@ -243,7 +243,7 @@ header .navigation-menu nav a {
   font-weight: 400;
   text-transform: capitalize;
   color: #1c1c1c99;
-}
+}*/
 
 .button_request {
   width: 230px;
@@ -419,7 +419,7 @@ header .navigation-menu nav a {
   }
 
   /* application */
-
+  /* 
   .application {
     flex-wrap: wrap;
     width: 100%;
@@ -537,7 +537,7 @@ header .navigation-menu nav a {
     align-self: center;
     border: none;
     cursor: pointer;
-  }
+  } */
 }
 
 /* Tabs */
@@ -661,7 +661,7 @@ header .navigation-menu nav a {
   }
 
   /* application */
-
+  /* 
   .application {
     flex-wrap: wrap;
     width: 100%;
@@ -761,9 +761,9 @@ header .navigation-menu nav a {
     font-weight: 400;
     text-transform: capitalize;
     color: #1c1c1c99;
-  }
+  } */
 
-  .button_request {
+  /* .button_request {
     width: 200px;
     padding: 16px 24px;
     background-color: #1c1c1c;
@@ -776,7 +776,7 @@ header .navigation-menu nav a {
     align-self: self-end;
     border: none;
     cursor: pointer;
-  }
+  } */
 }
 
 /* Laptops */
@@ -901,7 +901,7 @@ header .navigation-menu nav a {
 
   /* application */
 
-  .application {
+  /* .application {
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
@@ -1016,5 +1016,5 @@ header .navigation-menu nav a {
     align-self: self-end;
     border: none;
     cursor: pointer;
-  }
+  } */
 }

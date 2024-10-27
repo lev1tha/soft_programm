@@ -104,39 +104,6 @@ header .navigation-menu nav a {
   border-radius: 80px;
 }
 
-.application {
-  width: 100%;
-  margin-top: 100px;
-  background-color: var(--basic-color);
-  border-radius: 80px;
-  border: 2px solid #b48700;
-  padding: 100px;
-
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.left_site_application {
-  width: 700px;
-}
-
-.left_site_application .application-title h1 {
-  font-size: 32px;
-  line-height: 35.2px;
-  font-weight: 700;
-}
-
-.left_site_application .application-suptitle {
-  margin-top: 17px;
-}
-
-.left_site_application .application-suptitle p {
-  font-size: 20px;
-  line-height: 27px;
-  font-weight: 300;
-}
-
 .correct {
   display: flex;
   align-items: center;
@@ -148,60 +115,6 @@ header .navigation-menu nav a {
   font-size: 16px;
   line-height: 21.6px;
   font-weight: 300;
-}
-
-.right_site_application {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.right_site_application .top p {
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 400;
-}
-
-.right_site_application .top input {
-  width: 500px;
-  margin-top: 8px;
-  background-color: transparent;
-  padding: 10px 16px;
-  border: 1px solid #1c1c1c66;
-  border-radius: 32px;
-}
-
-.right_site_application .top input::placeholder {
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 400;
-  text-transform: capitalize;
-  color: #1c1c1c99;
-}
-
-.right_site_application .middle {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  width: 100%;
-}
-
-.right_site_application .middle input {
-  width: 230px;
-  margin-top: 8px;
-  background-color: transparent;
-  padding: 10px 16px;
-  border: 1px solid #1c1c1c66;
-  border-radius: 32px;
-}
-
-.right_site_application .middle input::placeholder {
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 400;
-  text-transform: capitalize;
-  color: #1c1c1c99;
 }
 
 .button_request {
@@ -219,3 +132,29 @@ header .navigation-menu nav a {
   cursor: pointer;
 }
 
+@media (max-width: 1200px) {
+
+  .image_collaction div {
+    max-width: 700px;
+    width: 100%;
+  }
+
+  .image_collaction div img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 860px) {
+  .image_collaction {
+    flex-wrap: wrap;
+  }
+
+  .image_collaction div {
+    max-width: 700px;
+    width: 100%;
+  }
+
+  .image_collaction div img {
+    width: 100%;
+  }
+}
