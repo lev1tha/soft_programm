@@ -1,6 +1,6 @@
 @import "../global.css";
 
-.container {
+/* .container {
   display: flex;
   justify-content: center;
 }
@@ -8,7 +8,7 @@
 .container_inner {
   max-width: 1440px;
   width: 100%;
-}
+} */
 
 header {
   margin-top: 28px;
@@ -275,7 +275,6 @@ footer .maker a {
   font-weight: 400;
   font-family: var(--global-font);
 }
-
 
 footer .top_navigate nav {
   display: flex;

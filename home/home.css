@@ -1,6 +1,6 @@
 @import "../global.css";
 
-.container {
+/* .container {
   display: flex;
   justify-content: center;
 }
@@ -8,7 +8,7 @@
 .container_inner {
   max-width: 1440px;
   width: 100%;
-}
+} */
 
 header {
   margin-top: 28px;
@@ -419,7 +419,6 @@ main .button_main a {
   padding: 100px;
   background-color: #fff;
   border-radius: 80px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border: 2px solid #ffd45d;
   text-align: center;
 }
@@ -550,6 +549,7 @@ main .button_main a {
   border-radius: 80px;
   height: 408px;
   width: 680px;
+  max-width: 100%;
 }
 
 /* footer */
@@ -814,6 +814,16 @@ footer .down_navigate .economic p {
     flex-direction: column;
   }
 
+  .faq-container {
+    margin: 20px auto 0;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 80px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ffd45d;
+    text-align: center;
+  }
+
   .card {
     max-width: 100%;
     margin-bottom: 20px;
@@ -842,12 +852,7 @@ footer .down_navigate .economic p {
   }
 }
 
-/* Для устройств с шириной экрана до 768px */
 @media (max-width: 768px) {
-  /* header {
-    flex-direction: column;
-  } */
-
   header .navigation-menu nav {
     flex-direction: column;
     gap: 10px;
@@ -902,7 +907,7 @@ footer .down_navigate .economic p {
     line-height: 16px;
     font-weight: 300;
   }
-  
+
   .correct p {
     font-size: 12px;
     line-height: 15.6px;
@@ -922,9 +927,55 @@ footer .down_navigate .economic p {
     color: #1c1c1ce5;
   }
 
+  .button_request {
+    padding: 12px 16px;
+    font-size: 14px;
+    line-height: 14px;
+    border-radius: 32px;
+  }
+
   .application {
     flex-direction: column;
     padding: 40px;
+  }
+
+  .contact_card {
+    padding: 52.5px 80px;
+    border: 1px solid var(--basic-color);
+    border-radius: 40px;
+  }
+
+  .faq-container {
+    padding: 20px;
+    border-radius: 40px;
+  }
+
+  .faq-question p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20.1px;
+  }
+
+  .faq-answer {
+    display: none;
+    padding-top: 8px;
+    font-size: 12px;
+    color: #555;
+    text-align: left;
+  }
+
+  .contact_card h1 {
+    font-size: 30px;
+    line-height: 31.2px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  .contact_card p {
+    width: 434px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1c1c1ce5;
   }
 
   footer {
@@ -981,6 +1032,25 @@ footer .down_navigate .economic p {
 
   .faq-container {
     padding: 20px;
+    border-radius: 40px;
+  }
+
+  .faq-question p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20.1px;
+  }
+
+  .faq-answer {
+    display: none;
+    padding-top: 8px;
+    font-size: 12px;
+    color: #555;
+    text-align: left;
+  }
+
+  .map_card > iframe {
+    border-radius: 40px;
   }
 
   footer {

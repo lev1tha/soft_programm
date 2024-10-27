@@ -1,6 +1,6 @@
 @import "../global.css";
 
-.container {
+/* .container {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
@@ -10,7 +10,7 @@
 .container_inner {
   max-width: 1440px;
   width: 100%;
-}
+} */
 
 header {
   margin-top: 28px;
