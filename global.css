@@ -201,6 +201,41 @@ header .navigation-menu nav .drop-menu .economic p {
   color: var(--black-50, #1c1c1c80);
 }
 
+/* Смена языков */
+.widgets {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.widgets nav a {
+  text-decoration: none;
+  color: #1c1c1c99;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-transform: capitalize;
+}
+
+.widgets nav span {
+  color: grey;
+}
+
+.widgets nav a:first-child {
+  color: var(--basic-color);
+}
+
+.widgets .catalog button {
+  display: none;
+  border-radius: 32px;
+  background-color: var(--basic-color);
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 24px;
+  border: 1px solid #1c1c1c99;
+  line-height: 16px;
+}
+
 /* Стили для бургер-меню */
 .burger-menu {
   display: none; /* По умолчанию скрыто на десктопе */
@@ -246,6 +281,7 @@ header .navigation-menu nav .drop-menu .economic p {
 
   .navigation-menu.open {
     display: flex;
+    flex-direction: column;
   }
 
   .drop-menu {
@@ -278,8 +314,258 @@ header .navigation-menu nav .drop-menu .economic p {
   }
 }
 
+/* Медиазапросы для адаптации */
+@media (max-width: 1200px) {
+
+
+  footer {
+    flex-direction: column; /* Вертикальное расположение */
+    padding: 50px; /* Уменьшить отступы */
+  }
+
+  footer .logo_footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .maker {
+    display: none;
+  }
+  footer .social {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .top_navigate nav {
+    flex-direction: column; /* Вертикальное расположение ссылок */
+    gap: 16px; /* Уменьшить промежутки */
+  }
+  footer .top_navigate nav a {
+    flex-direction: column; /* Вертикальное расположение ссылок */
+    gap: 16px; /* Уменьшить промежутки */
+    text-align: center;
+  }
+
+  footer .down_navigate {
+    flex-direction: column; /* Вертикальное расположение */
+    gap: 20px; /* Уменьшить промежутки */
+  }
+
+  footer .top_footer .contact_info {
+    display: none;
+  }
+
+  footer .under_navigate .licences,
+  footer .under_navigate .model,
+  footer .under_navigate .instalation,
+  footer .under_navigate .fresh,
+  footer .down_navigate .server,
+  footer .down_navigate .economic {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
+  
+
+  footer {
+    height: auto; /* Высота автоматически подстраивается под контент */
+    padding: 20px; /* Уменьшить отступы */
+  }
+
+  footer .top_footer .social {
+    justify-content: center; /* Центрировать иконки соцсетей */
+  }
+
+  footer .top_footer .social .box_social {
+    width: 36px; /* Уменьшить размер иконок */
+    height: 36px;
+  }
+
+  footer .maker a {
+    font-size: 18px; /* Уменьшить размер шрифта */
+  }
+
+  footer .under_navigate,
+  footer .down_navigate {
+    flex-direction: column; /* Вертикальное расположение */
+    gap: 16px; /* Уменьшить промежутки */
+  }
+
+  footer .under_navigate .licences,
+  footer .under_navigate .model,
+  footer .under_navigate .instalation,
+  footer .under_navigate .fresh,
+  footer .down_navigate .server,
+  footer .down_navigate .economic {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    margin-top: 20px;
+  }
+
+  /* application */
+
+  .application {
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+    background-color: var(--basic-color);
+    border-radius: 80px;
+    border: 2px solid #b48700;
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
   .left_site_application {
-    width: 228px;
+    width: 500px;
+  }
+
+  .left_site_application .application-title h1 {
+    width: 300px;
+    font-size: 24px;
+    line-height: 35.2px;
+    font-weight: 700;
+  }
+
+  .left_site_application .application-suptitle {
+    margin-top: 17px;
+  }
+
+  .left_site_application .application-suptitle p {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 300;
+  }
+
+  .correct {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .correct p {
+    font-size: 16px;
+    line-height: 21.6px;
+    font-weight: 300;
+  }
+
+  .right_site_application {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .right_site_application .top p {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+
+  .right_site_application .top input {
+    width: 250px;
+    margin-top: 8px;
+    background-color: transparent;
+    padding: 10px 16px;
+    border: 1px solid #1c1c1c66;
+    border-radius: 32px;
+  }
+
+  .right_site_application .top input::placeholder {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #1c1c1c99;
+  }
+
+  .right_site_application .middle {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+  }
+  .right_site_application .middle p {
+    font-size: 12px;
+  }
+
+  .right_site_application .middle input {
+    width: 250px;
+    margin-top: 8px;
+    background-color: transparent;
+    padding: 10px 16px;
+    border: 1px solid #1c1c1c66;
+    border-radius: 32px;
+  }
+
+  .right_site_application .middle input::placeholder {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #1c1c1c99;
+  }
+
+  .button_request {
+    width: 250px;
+    padding: 16px 24px;
+    background-color: #1c1c1c;
+    color: var(--basic-color);
+    font-family: var(--global-font);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    border-radius: 32px;
+    align-self: center;
+    border: none;
+    cursor: pointer;
+  }
+
+  footer {
+    height: auto; /* Высота автоматически подстраивается под контент */
+    padding: 20px; /* Уменьшить отступы */
+  }
+
+  footer .top_footer .social {
+    justify-content: center; /* Центрировать иконки соцсетей */
+  }
+
+  footer .top_footer .social .box_social {
+    width: 36px; /* Уменьшить размер иконок */
+    height: 36px;
+  }
+
+  footer .maker a {
+    font-size: 18px; /* Уменьшить размер шрифта */
+  }
+
+  footer .under_navigate,
+  footer .down_navigate {
+    flex-direction: column; /* Вертикальное расположение */
+    gap: 16px; /* Уменьшить промежутки */
+  }
+
+  footer .under_navigate .licences,
+  footer .under_navigate .model,
+  footer .under_navigate .instalation,
+  footer .under_navigate .fresh,
+  footer .down_navigate .server,
+  footer .down_navigate .economic {
+    display: none;
+  }
+
+  footer .ilustration img {
+  width: 500px;
+  height: 400px;
+  position: relative;
+  margin-bottom: 50px;
+  right:100px;
   }
 }
