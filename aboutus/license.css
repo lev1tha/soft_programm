@@ -1,15 +1,5 @@
 @import "../global.css";
 
-/* .container {
-  display: flex;
-  justify-content: center;
-}
-
-.container_inner {
-  max-width: 1440px;
-  width: 100%;
-} */
-
 header {
   margin-top: 28px;
   display: flex;
@@ -30,7 +20,7 @@ header .navigation-menu nav a {
   font-weight: 400;
   font-size: 16px;
   color: black;
-  line-height: 21.6px;
+  line-height: 26.6px;
 }
 
 .widgets {
@@ -134,6 +124,9 @@ header .navigation-menu nav a {
   border-radius: 64px;
   flex: 1;
   height: fit-content;
+
+  position: sticky;
+  top: 100px;
 }
 
 .image_title img {
@@ -297,246 +290,10 @@ header .navigation-menu nav a {
   cursor: pointer;
 }
 
-footer {
-  margin-top: 100px;
-  background-color: var(--basic-color);
-  padding: 100px;
-  border-radius: 80px;
-
-  display: flex;
-  gap: 100px;
-  height: 750px;
-}
-
-footer .top_footer {
-  display: flex;
-  flex-direction: column;
-}
-
-footer .top_footer .social {
-  margin-top: 24px;
-  display: flex;
-  align-items: center;
-
-  gap: 8px;
-}
-
-footer .top_footer .social .box_social {
-  width: 48px;
-  height: 48px;
-  border-radius: 32px;
-  border: 1px solid #1c1c1c99;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-footer .top_footer .social .box_social:hover {
-  background-color: black;
-}
-
-footer .top_footer .contact_info {
-  margin-top: 34px;
-}
-
-footer .top_footer .contact_info > div {
-  display: flex;
-}
-
-footer .maker {
-  margin-top: 68px;
-}
-
-footer .maker a {
-  font-size: 22px;
-  font-weight: 400;
-  font-family: var(--global-font);
-}
-
-footer .top_navigate nav {
-  display: flex;
-  gap: 28px;
-}
-
-footer .top_navigate nav a {
-  font-family: var(--global-font);
-
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 16px;
-  color: black;
-  line-height: 21.6px;
-}
-
-footer .under_navigate {
-  display: flex;
-  justify-content: space-between;
-  gap: 50px;
-  margin-top: 40px;
-}
-
-footer .under_navigate .licences {
-  width: Fixed (230px) px;
-  height: Hug (234px) px;
-  padding: 12px 0px 12px 0px;
-  gap: 16px;
-  border-radius: 24px 0px 0px 0px;
-  opacity: 0px;
-}
-
-footer .under_navigate .licences h1 {
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 21.6px;
-}
-
-footer .under_navigate .licences p {
-  width: Hug (189px) px;
-  height: Hug (172px) px;
-  gap: 8px;
-  opacity: 0px;
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 21.6px;
-  text-align: left;
-  color: var(--black-50, #1c1c1c80);
-}
-
-footer .under_navigate .model {
-  width: Hug (249px) px;
-  height: Hug (204px) px;
-  padding: 12px 0px 12px 0px;
-  gap: 16px;
-  border-radius: 24px 0px 0px 0px;
-  opacity: 0px;
-}
-
-footer .under_navigate .model h1 {
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 21.6px;
-}
-
-footer .under_navigate .model p {
-  width: Hug (189px) px;
-  height: Hug (172px) px;
-  gap: 8px;
-  opacity: 0px;
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 21.6px;
-  text-align: left;
-  color: var(--black-50, #1c1c1c80);
-}
-
-footer .under_navigate .instalation {
-  width: Hug (249px) px;
-  height: Hug (204px) px;
-  padding: 12px 0px 12px 0px;
-  gap: 16px;
-  border-radius: 24px 0px 0px 0px;
-  opacity: 0px;
-}
-
-footer .under_navigate .instalation h1 {
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 21.6px;
-}
-
-footer .under_navigate .fresh {
-  width: Hug (249px) px;
-  height: Hug (204px) px;
-  padding: 12px 0px 12px 0px;
-  gap: 16px;
-  border-radius: 24px 0px 0px 0px;
-  opacity: 0px;
-}
-
-footer .under_navigate .fresh h1 {
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 21.6px;
-}
-
-footer .down_navigate {
-  display: flex;
-  gap: 50px;
-}
-
-footer .down_navigate .server {
-  width: Hug (230px) px;
-  height: Hug (144px) px;
-  padding: 12px 0px 12px 0px;
-  gap: 16px;
-  border-radius: 24px 0px 0px 0px;
-  opacity: 0px;
-}
-footer .down_navigate .server h1 {
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 21.6px;
-}
-
-footer .down_navigate .server p {
-  width: Hug (189px) px;
-  height: Hug (172px) px;
-  gap: 8px;
-  opacity: 0px;
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 21.6px;
-  text-align: left;
-  color: var(--black-50, #1c1c1c80);
-}
-
-footer .down_navigate .economic {
-  width: Hug (230px) px;
-  height: Hug (144px) px;
-  padding: 12px 0px 12px 0px;
-  gap: 16px;
-  border-radius: 24px 0px 0px 0px;
-  opacity: 0px;
-}
-
-footer .down_navigate .economic h1 {
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 21.6px;
-}
-
-footer .down_navigate .economic p {
-  width: Hug (189px) px;
-  height: Hug (172px) px;
-  gap: 8px;
-  opacity: 0px;
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 21.6px;
-  text-align: left;
-  color: var(--black-50, #1c1c1c80);
-}
-
 /* Адаптивность для планшетов (от 768px до 1200px) */
 @media (max-width: 1200px) {
   .container_inner {
     padding: 0 20px;
-  }
-
-  header {
-    flex-direction: column;
-    align-items: center;
   }
 
   header .navigation-menu nav {
@@ -601,7 +358,7 @@ footer .down_navigate .economic p {
     width: 100%;
   }
 
-  footer {
+  /* footer {
     flex-direction: column;
     padding: 60px;
     gap: 50px;
@@ -611,7 +368,7 @@ footer .down_navigate .economic p {
   footer .under_navigate {
     flex-direction: column;
     gap: 20px;
-  }
+  } */
 }
 
 /* Адаптивность для больших смартфонов (от 480px до 767px) */
@@ -620,13 +377,13 @@ footer .down_navigate .economic p {
     padding: 0;
   }
 
-  .container_inner {
-    padding: 0 20px;
+  .info_server_licence > article {
+    position: relative;
+    top: 0px;
   }
 
-  header {
-    flex-direction: column;
-    align-items: center;
+  .container_inner {
+    padding: 0 20px;
   }
 
   header .navigation-menu nav {
@@ -694,7 +451,7 @@ footer .down_navigate .economic p {
     gap: 10px;
   }
 
-  footer {
+  /* footer {
     flex-direction: column;
     padding: 40px;
     height: fit-content;
@@ -711,7 +468,7 @@ footer .down_navigate .economic p {
   footer .down_navigate {
     flex-direction: column;
     gap: 20px;
-  }
+  } */
 }
 
 /* Адаптивность для маленьких смартфонов (до 480px) */
@@ -752,7 +509,7 @@ footer .down_navigate .economic p {
   .right_site_application .middle input {
     width: 100%;
   }
-
+  /* 
   footer {
     padding: 20px;
     gap: 20px;
@@ -763,5 +520,5 @@ footer .down_navigate .economic p {
   footer .down_navigate {
     flex-direction: column;
     gap: 20px;
-  }
+  } */
 }
