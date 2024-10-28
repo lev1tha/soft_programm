@@ -103,7 +103,7 @@ main .card-container .card .right_site_map .box_title h1 {
   text-align: left;
 }
 
-main .card-container .card .right_site_map .box_title p {
+main .card-container .card .right_site_map .box_title a {
   font-family: Poppins;
   font-size: 20px;
   font-weight: 400;
@@ -111,6 +111,7 @@ main .card-container .card .right_site_map .box_title p {
   text-align: left;
   color: var(--black-50, #1c1c1c80);
   cursor: pointer;
+  text-decoration: none;
 }
 
 main .card-container .card .right_site_map .box_title span {
@@ -123,12 +124,12 @@ main .card-container .card .right_site_map .box_title span {
   opacity: 0px;
 }
 
-main .card-container .card .right_site_map .box_title p:hover {
+main .card-container .card .right_site_map .box_title a:hover {
   color: black;
   transition: 0.5s ease-in-out;
 }
 
-main .card-container .card .right_site_map .box_title p:hover > span {
+main .card-container .card .right_site_map .box_title a:hover > span {
   color: #fbbb00;
   background-color: black;
   transition: 0.5s ease-in-out;
@@ -215,7 +216,7 @@ main .card-container .card .left_site_map .box_title h1 {
   text-align: center;
 }
 
-main .card-container .card .left_site_map .box_title p {
+main .card-container .card .left_site_map .box_title a {
   font-family: Poppins;
   font-size: 20px;
   font-weight: 400;
@@ -235,12 +236,12 @@ main .card-container .card .left_site_map .box_title span {
   opacity: 0px;
 }
 
-main .card-container .card .left_site_map .box_2 p:hover {
+main .card-container .card .left_site_map .box_2 a:hover {
   color: black;
   transition: 0.5s ease-in-out;
 }
 
-main .card-container .card .left_site_map .box_2 p:hover > span {
+main .card-container .card .left_site_map .box_2 a:hover > span {
   color: #fbbb00;
   background-color: black;
   transition: 0.5s ease-in-out;
@@ -285,7 +286,7 @@ main .card-container .card .left_site_map .box_2 p:hover > span {
   text-align: left;
 }
 
-.main .card-container-down .card-down .right_site_down .box_title p {
+.main .card-container-down .card-down .right_site_down .box_title a {
   font-family: Poppins;
   font-size: 20px;
   font-weight: 400;
@@ -305,7 +306,7 @@ main .card-container .card .left_site_map .box_2 p:hover > span {
   opacity: 0px;
 }
 
-.main .card-container-down .card-down .right_site_down .box_title p:hover {
+.main .card-container-down .card-down .right_site_down .box_title a:hover {
   color: black;
   transition: 0.5s ease-in-out;
 }
@@ -366,7 +367,7 @@ main .card-container .card .left_site_map .box_2 p:hover > span {
   text-align: center;
 }
 
-.main .card-container-down .card-down .left_site_down .box_title p {
+.main .card-container-down .card-down .left_site_down .box_title a {
   font-family: Poppins;
   font-size: 20px;
   font-weight: 400;
@@ -386,7 +387,7 @@ main .card-container .card .left_site_map .box_2 p:hover > span {
   opacity: 0px;
 }
 
-.main .card-container-down .card-down .left_site_down .box_title p:hover {
+.main .card-container-down .card-down .left_site_down .box_title a:hover {
   color: black;
   transition: 0.5s ease-in-out;
 }
@@ -404,7 +405,6 @@ main .card-container .card .left_site_map .box_2 p:hover > span {
 }
 
 /* application */
-
 
 .left_site_application {
   max-width: 700px;
@@ -771,8 +771,6 @@ main .card-container .card .left_site_map .box_2 p:hover > span {
     opacity: 0px;
   }
 
-
-
   .correct {
     display: flex;
     align-items: center;
@@ -858,6 +856,8 @@ main .card-container .card .left_site_map .box_2 p:hover > span {
     cursor: pointer;
   }
 }
+
+
 @media (min-width: 481px) and (max-width: 768px) {
   main .card {
     display: block;
