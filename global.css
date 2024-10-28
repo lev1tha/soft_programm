@@ -309,7 +309,6 @@ header .navigation-menu nav .drop-menu .economic p:hover {
   gap: 10px;
 }
 
-<<<<<<< HEAD
 footer .under_navigate .licences  p:hover {
   transform: translateY(2, 3);
   cursor: pointer;
@@ -329,7 +328,6 @@ footer .under_navigate .model  p:hover {
   .burger-menu {
     display: block;
   }
-=======
 .application {
   width: 100%;
   margin-top: 100px;
@@ -337,7 +335,6 @@ footer .under_navigate .model  p:hover {
   border-radius: 80px;
   border: 2px solid #b48700;
   padding: 100px;
->>>>>>> e21433fcc26364b9c88991fe0b4c57ffce1eb7d7
 
   display: flex;
   align-items: center;
@@ -1058,4 +1055,5 @@ footer .down_navigate .ilustration_footer {
     margin-bottom: 50px;
     right: -40px;
   }
+}
 }
