@@ -648,8 +648,7 @@ footer .under_navigate .licences h1 {
 }
 
 footer .under_navigate .licences p {
-  width: 100%;
-  /* height: 172px; */
+  width: 190px;
   gap: 8px;
   opacity: 0px;
   font-family: Poppins;
@@ -865,20 +864,62 @@ footer .down_navigate .ilustration_footer {
     justify-content: center;
   }
 
-  footer {
-    flex-direction: column;
-    padding: 60px;
-    gap: 50px;
+  .right_site_application .top input,
+  .right_site_application .middle input {
+    width: 100%;
   }
 
-  footer .top_footer,
-  footer .under_navigate {
-    flex-direction: column;
-    gap: 20px;
+  footer {
+    flex-direction: column; /* Вертикальное расположение */
+    padding: 50px; /* Уменьшить отступы */
+  }
+
+  footer .logo_footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .maker {
+    display: none;
+  }
+  footer .social {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .top_navigate nav {
+    flex-direction: column; /* Вертикальное расположение ссылок */
+    gap: 16px; /* Уменьшить промежутки */
+  }
+  footer .top_navigate nav a {
+    flex-direction: column; /* Вертикальное расположение ссылок */
+    gap: 16px; /* Уменьшить промежутки */
+    text-align: center;
+  }
+
+  footer .down_navigate {
+    flex-direction: column; /* Вертикальное расположение */
+    gap: 20px; /* Уменьшить промежутки */
+  }
+
+  footer .top_footer .contact_info {
+    display: none;
+  }
+
+  footer .under_navigate .licences,
+  footer .under_navigate .model,
+  footer .under_navigate .instalation,
+  footer .under_navigate .fresh,
+  footer .down_navigate .server,
+  footer .down_navigate .economic {
+    display: none;
   }
 }
 
 @media (max-width: 768px) {
+  .widgets .catalog button{
+    display: none;
+  }
   header .navigation-menu nav {
     flex-direction: column;
     gap: 10px;
@@ -916,29 +957,135 @@ footer .down_navigate .ilustration_footer {
     flex-wrap: wrap;
   }
 
-  .left_site_application {
-    max-width: 400px;
-    width: 100%;
-  }
-
-  .left_site_application .title h1 {
-    font-size: 18px;
-    line-height: 23.2px;
-    font-weight: 700;
-  }
-
-  .left_site_application .suptitle p {
-    color: #1c1c1ce5;
-    font-size: 13px;
-    line-height: 16px;
-    font-weight: 300;
+  .correct {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
   }
 
   .correct p {
-    font-size: 12px;
-    line-height: 15.6px;
+    font-size: 16px;
+    line-height: 21.6px;
     font-weight: 300;
   }
+
+  .right_site_application {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .right_site_application .top p {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+
+  .right_site_application .top input {
+    width: 400px;
+    margin-top: 8px;
+    background-color: transparent;
+    padding: 10px 16px;
+    border: 1px solid #1c1c1c66;
+    border-radius: 32px;
+  }
+
+  .right_site_application .top input::placeholder {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #1c1c1c99;
+  }
+
+  .right_site_application .middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+  }
+
+  .right_site_application .middle input {
+    width: 180px;
+    margin-top: 8px;
+    background-color: transparent;
+    padding: 10px 16px;
+    border: 1px solid #1c1c1c66;
+    border-radius: 32px;
+  }
+
+  .right_site_application .middle input::placeholder {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #1c1c1c99;
+  }
+
+  .button_request {
+    width: 200px;
+    padding: 16px 24px;
+    background-color: #1c1c1c;
+    color: var(--basic-color);
+    font-family: var(--global-font);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    border-radius: 32px;
+    align-self: self-end;
+    border: none;
+    cursor: pointer;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .navigation-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 100;
+  }
+
+  .navigation-menu.open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .drop-menu {
+    position: relative;
+  }
+
+  .drop-menu-after {
+    display: none;
+  }
+
+  .drop-menu:hover .drop-menu-after {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .application {
+    border: 2px solid #b48700;
+    padding: 50px;
+    border-radius: 40px;
+  }
+
+  .left_site_application {
+    width: 500px;
+  }
+
 
   .partnership_cards {
     flex-direction: column;
@@ -1026,6 +1173,9 @@ footer .down_navigate .ilustration_footer {
 
 /* Для устройств с шириной экрана до 480px */
 @media (max-width: 480px) {
+  .widgets .catalog button{
+    display: none;
+  }
   header {
     margin-top: 20px;
   }
@@ -1050,6 +1200,130 @@ footer .down_navigate .ilustration_footer {
 
   .contact_card {
     padding: 20px;
+  }
+
+   /* application */
+
+   .application {
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+    background-color: var(--basic-color);
+    border-radius: 40px;
+    padding: 40px;
+    border: 2px solid #b48700;
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .left_site_application {
+    width: 300px;
+  }
+
+  .left_site_application .application-title h1 {
+    width: 300px;
+    font-size: 24px;
+    line-height: 35.2px;
+    font-weight: 700;
+  }
+
+  .left_site_application .application-suptitle {
+    margin-top: 17px;
+  }
+
+  .left_site_application .application-suptitle p {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 300;
+  }
+
+  .correct {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 320px;
+  }
+  .correct p {
+    font-size: 16px;
+    line-height: 21.6px;
+    font-weight: 300;
+  }
+
+  .right_site_application {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .right_site_application .top p {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+
+  .right_site_application .top input {
+    width: 250px;
+    margin-top: 8px;
+    background-color: transparent;
+    padding: 10px 16px;
+    border: 1px solid #1c1c1c66;
+    border-radius: 32px;
+  }
+
+  .right_site_application .top input::placeholder {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #1c1c1c99;
+  }
+
+  .right_site_application .middle {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .right_site_application .middle p {
+    font-size: 12px;
+  }
+
+  .right_site_application .middle input {
+    width: 250px;
+    margin-top: 8px;
+    background-color: transparent;
+    padding: 10px 16px;
+    border: 1px solid #1c1c1c66;
+    border-radius: 32px;
+  }
+
+  .right_site_application .middle input::placeholder {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #1c1c1c99;
+  }
+
+  .button_request {
+    margin-bottom: 20px;
+    width: 250px;
+    padding: 16px 24px;
+    background-color: #1c1c1c;
+    color: var(--basic-color);
+    font-family: var(--global-font);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    border-radius: 32px;
+    align-self: center;
+    border: none;
+    cursor: pointer;
   }
 
   .contact_card p {
