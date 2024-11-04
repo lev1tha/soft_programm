@@ -543,11 +543,23 @@ footer .down_navigate .ilustration_footer {
   }
   header {
     margin: 0 auto;
-    /* margin-top: 28px; */
-    display: flex;
+    margin-top: 28px;
+    /* display: flex;
     align-items: center;
 
+    justify-content: space-evenly; */
+  }
+  header {
+    width: 530px;
+    display: flex;
     justify-content: space-evenly;
+    margin-left: -70px;
+  }
+  .widgets nav {
+    display: flex;
+  }
+  header .logotype img {
+    width: 156px;
   }
 
   header .navigation-menu nav {
@@ -600,6 +612,30 @@ footer .down_navigate .ilustration_footer {
     font-weight: 400;
     border: 1px solid #1c1c1c99;
     line-height: 16px;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .navigation-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 100;
+  }
+
+  header .navigation-menu .open {
+    display: flex;
+    flex-direction: column;
+  }
+  header .navigation-menu nav {
+    flex-direction: column;
+    gap: 10px;
   }
 
   /* contacts */

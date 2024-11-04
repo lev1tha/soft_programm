@@ -832,6 +832,16 @@ footer .down_navigate .ilustration_footer {
     font-size: 10px;
   }
 
+  header {
+    width: 530px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -60px;
+  }
+  .widgets nav {
+    display: flex;
+  }
+
   .text_info h1 {
     font-size: 28px;
     line-height: 34px;

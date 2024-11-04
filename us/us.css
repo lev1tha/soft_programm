@@ -516,7 +516,6 @@ footer .down_navigate .ilustration_footer {
   .right_site_application .middle input {
     width: 100%;
   }
-
 }
 
 @media (max-width: 860px) {
@@ -540,11 +539,11 @@ footer .down_navigate .ilustration_footer {
   }
   header {
     padding: 0 42px;
-  }  
+  }
   header .navigation-menu nav {
     flex-direction: column;
     gap: 10px;
-}
+  }
 
   .burger-menu {
     display: block;
@@ -573,7 +572,7 @@ footer .down_navigate .ilustration_footer {
   .drop-menu-after {
     display: none;
   }
-  
+
   .drop-menu:hover .drop-menu-after {
     display: block;
     position: absolute;
@@ -582,7 +581,7 @@ footer .down_navigate .ilustration_footer {
     padding: 10px;
     width: 100%;
   }
-  
+
   .contact_card h1 {
     font-size: 30px;
     line-height: 31.2px;
@@ -679,6 +678,15 @@ footer .down_navigate .ilustration_footer {
 }
 /* Адаптивность для маленьких смартфонов (до 480px) */
 @media (max-width: 480px) {
+  header {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -40px;
+  }
+  .widgets nav {
+    display: flex;
+  }
   .container_inner {
     padding: 0 10px;
   }

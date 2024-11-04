@@ -1187,8 +1187,13 @@ footer .down_navigate .ilustration_footer {
     display: none;
   }
   header {
+    width: 550px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    margin-left: -100px;
+  }
+  .widgets nav {
+    display: flex;
   }
 
   .title_section {
