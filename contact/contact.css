@@ -632,6 +632,7 @@ footer .down_navigate .ilustration_footer {
   header .navigation-menu .open {
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
   header .navigation-menu nav {
     flex-direction: column;

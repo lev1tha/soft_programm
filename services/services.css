@@ -1281,14 +1281,15 @@ footer .down_navigate .ilustration_footer {
   .navigation-menu.open {
     display: flex;
     flex-direction: column;
+    text-align: center;
+  }
+  .navigation-menu.open nav a {
+    font-size: 18px;
+    color: var(--black-40, #1c1c1c66);
   }
   header .navigation-menu nav {
     flex-direction: column;
     gap: 10px;
-  }
-
-  .drop-menu {
-    position: relative;
   }
 
   .drop-menu-after {
@@ -1297,11 +1298,24 @@ footer .down_navigate .ilustration_footer {
 
   .drop-menu:hover .drop-menu-after {
     display: block;
-    position: absolute;
     background-color: #fff;
     border: 1px solid #ddd;
-    padding: 10px;
     width: 100%;
+    position: relative;
+  }
+  .drop-menu-after {
+    display: block;
+    flex-direction: column;
+  }
+  header .navigation-menu nav>.drop-menu .model {
+    height: 0px;
+  }
+
+  .drop-menu-after .licences p,
+  .drop-menu-after .model p,
+  .drop-menu-after .economic p,
+  .drop-menu-after .server-up p {
+    display: none;
   }
 
   .application {

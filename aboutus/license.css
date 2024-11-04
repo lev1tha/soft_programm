@@ -690,6 +690,7 @@ footer .down_navigate .ilustration_footer {
   .navigation-menu.open {
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
 
   .drop-menu {
