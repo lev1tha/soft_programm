@@ -145,7 +145,7 @@ header .navigation-menu nav a {
 
 /* application */
 
-/* .application {
+.application {
   width: 100%;
   margin-top: 20px;
   background-color: var(--basic-color);
@@ -243,7 +243,7 @@ header .navigation-menu nav a {
   font-weight: 400;
   text-transform: capitalize;
   color: #1c1c1c99;
-}*/
+}
 
 .button_request {
   width: 230px;
@@ -347,8 +347,8 @@ footer .under_navigate {
 }
 
 footer .under_navigate .licences {
-  max-width: 200px;
-  height: 234px;
+  width: 300px;
+  /* height: 234px; */
   padding: 12px 0px 12px 0px;
   gap: 16px;
   border-radius: 24px 0px 0px 0px;
@@ -685,126 +685,86 @@ footer .down_navigate .ilustration_footer {
     border: Mixed solid var(--black-10, #1c1c1c1a);
   }
 
-  /* application */
-  /* 
   .application {
+    padding: 40px;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
     margin-top: 20px;
     background-color: var(--basic-color);
     border-radius: 80px;
     border: 2px solid #b48700;
-
+    padding: 70px;
     display: flex;
     align-items: center;
     gap: 40px;
   }
 
   .left_site_application {
-    width: 500px;
+    width: 100%;
   }
 
-  .left_site_application .application-title h1 {
+  .right_site_application .top input,
+  .right_site_application .middle input {
     width: 300px;
-    font-size: 24px;
-    line-height: 35.2px;
-    font-weight: 700;
-  }
-
-  .left_site_application .application-suptitle {
-    margin-top: 17px;
-  }
-
-  .left_site_application .application-suptitle p {
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: 300;
-  }
-
-  .correct {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-top: 20px;
-  }
-
-  .correct p {
-    font-size: 16px;
-    line-height: 21.6px;
-    font-weight: 300;
-  }
-
-  .right_site_application {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .right_site_application .top p {
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 400;
-  }
-
-  .right_site_application .top input {
-    width: 250px;
-    margin-top: 8px;
-    background-color: transparent;
-    padding: 10px 16px;
-    border: 1px solid #1c1c1c66;
-    border-radius: 32px;
-  }
-
-  .right_site_application .top input::placeholder {
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 400;
-    text-transform: capitalize;
-    color: #1c1c1c99;
   }
 
   .right_site_application .middle {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer {
     display: block;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    width: 100%;
-  }
-  .right_site_application .middle p {
-    font-size: 12px;
+    gap: 10px;
+    padding: 20px; /* Уменьшить отступы */
   }
 
-  .right_site_application .middle input {
-    width: 250px;
-    margin-top: 8px;
-    background-color: transparent;
-    padding: 10px 16px;
-    border: 1px solid #1c1c1c66;
-    border-radius: 32px;
+  footer .logo_footer {
+    display: flex;
+    justify-content: center;
+  }
+  footer .top_footer .social {
+    justify-content: center; /* Центрировать иконки соцсетей */
   }
 
-  .right_site_application .middle input::placeholder {
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 400;
-    text-transform: capitalize;
-    color: #1c1c1c99;
+  footer .top_footer .social .box_social {
+    width: 36px; /* Уменьшить размер иконок */
+    height: 36px;
   }
 
-  .button_request {
-    width: 250px;
-    padding: 16px 24px;
-    background-color: #1c1c1c;
-    color: var(--basic-color);
-    font-family: var(--global-font);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 20px;
-    border-radius: 32px;
-    align-self: center;
-    border: none;
-    cursor: pointer;
-  } */
+  footer .maker a {
+    display: none;
+    font-size: 18px; /* Уменьшить размер шрифта */
+  }
+  footer .right_site_footer .top_navigate nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .under_navigate,
+  footer .down_navigate,
+  footer .top_navigate {
+    flex-direction: column; /* Вертикальное расположение */
+    gap: 16px; /* Уменьшить промежутки */
+  }
+
+  footer .top_footer .contact_info,
+  footer .under_navigate .licences,
+  footer .under_navigate .model,
+  footer .under_navigate .instalation,
+  footer .under_navigate .fresh,
+  footer .down_navigate .server,
+  footer .down_navigate .economic {
+    display: none;
+  }
+  footer .ilustration_footer img {
+    width: 500px;
+    height: 400px;
+    position: relative;
+    margin-bottom: 50px;
+    right: 50px;
+  }
 }
 
 /* Tabs */
@@ -874,6 +834,30 @@ footer .down_navigate .ilustration_footer {
     line-height: 16px;
   }
 
+  .burger-menu {
+    display: block;
+  }
+
+  .navigation-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 100;
+  }
+
+  .navigation-menu.open {
+    display: flex;
+    flex-direction: column;
+  }
+  header .navigation-menu nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
   /* contacts */
 
   .contacts-title {
@@ -927,123 +911,86 @@ footer .down_navigate .ilustration_footer {
     border: Mixed solid var(--black-10, #1c1c1c1a);
   }
 
-  /* application */
-  /* 
   .application {
+    padding: 40px;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
     margin-top: 20px;
     background-color: var(--basic-color);
     border-radius: 80px;
     border: 2px solid #b48700;
-    padding: 100px;
-
+    padding: 70px;
     display: flex;
     align-items: center;
     gap: 40px;
   }
 
   .left_site_application {
-    width: 450px;
-  }
-
-  .left_site_application .application-title h1 {
-    font-size: 32px;
-    line-height: 35.2px;
-    font-weight: 700;
-  }
-
-  .left_site_application .application-suptitle {
-    margin-top: 17px;
-  }
-
-  .left_site_application .application-suptitle p {
-    font-size: 20px;
-    line-height: 27px;
-    font-weight: 300;
-  }
-
-  .correct {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-top: 20px;
-  }
-
-  .correct p {
-    font-size: 16px;
-    line-height: 21.6px;
-    font-weight: 300;
-  }
-
-  .right_site_application {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .right_site_application .top p {
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 400;
-  }
-
-  .right_site_application .top input {
-    width: 400px;
-    margin-top: 8px;
-    background-color: transparent;
-    padding: 10px 16px;
-    border: 1px solid #1c1c1c66;
-    border-radius: 32px;
-  }
-
-  .right_site_application .top input::placeholder {
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 400;
-    text-transform: capitalize;
-    color: #1c1c1c99;
-  }
-
-  .right_site_application .middle {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
     width: 100%;
   }
 
+  .right_site_application .top input,
   .right_site_application .middle input {
-    width: 180px;
-    margin-top: 8px;
-    background-color: transparent;
-    padding: 10px 16px;
-    border: 1px solid #1c1c1c66;
-    border-radius: 32px;
+    width: 300px;
   }
 
-  .right_site_application .middle input::placeholder {
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 400;
-    text-transform: capitalize;
-    color: #1c1c1c99;
-  } */
+  .right_site_application .middle {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-  /* .button_request {
-    width: 200px;
-    padding: 16px 24px;
-    background-color: #1c1c1c;
-    color: var(--basic-color);
-    font-family: var(--global-font);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 20px;
-    border-radius: 32px;
-    align-self: self-end;
-    border: none;
-    cursor: pointer;
-  } */
+  footer {
+    display: block;
+    gap: 10px;
+    padding: 20px; /* Уменьшить отступы */
+  }
+
+  footer .logo_footer {
+    display: flex;
+    justify-content: center;
+  }
+  footer .top_footer .social {
+    justify-content: center; /* Центрировать иконки соцсетей */
+  }
+
+  footer .top_footer .social .box_social {
+    width: 36px; /* Уменьшить размер иконок */
+    height: 36px;
+  }
+
+  footer .maker a {
+    display: none;
+    font-size: 18px; /* Уменьшить размер шрифта */
+  }
+  footer .right_site_footer .top_navigate nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .under_navigate,
+  footer .down_navigate,
+  footer .top_navigate {
+    flex-direction: column; /* Вертикальное расположение */
+    gap: 16px; /* Уменьшить промежутки */
+  }
+
+  footer .top_footer .contact_info,
+  footer .under_navigate .licences,
+  footer .under_navigate .model,
+  footer .under_navigate .instalation,
+  footer .under_navigate .fresh,
+  footer .down_navigate .server,
+  footer .down_navigate .economic {
+    display: none;
+  }
+  footer .ilustration_footer img {
+    width: 500px;
+    height: 400px;
+    position: relative;
+    margin-bottom: 50px;
+    right: 50px;
+  }
 }
 
 /* Laptops */
@@ -1285,4 +1232,3 @@ footer .down_navigate .ilustration_footer {
     cursor: pointer;
   } */
 }
-

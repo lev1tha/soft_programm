@@ -362,8 +362,8 @@ footer .under_navigate {
 }
 
 footer .under_navigate .licences {
-  max-width: 200px;
-  height: 234px;
+  width: 300px;
+  /* height: 234px; */
   padding: 12px 0px 12px 0px;
   gap: 16px;
   border-radius: 24px 0px 0px 0px;
@@ -564,7 +564,6 @@ footer .down_navigate .ilustration_footer {
   }
 
   header .navigation-menu nav {
-    flex-direction: column;
     gap: 12px;
   }
 
@@ -587,7 +586,9 @@ footer .down_navigate .ilustration_footer {
     position: relative;
     margin-bottom: 20px;
   }
-
+  .info_server_licence > article {
+    position: static;
+  }
   .text_info {
     text-align: center;
     left: 0;
@@ -644,6 +645,10 @@ footer .down_navigate .ilustration_footer {
     padding: 0;
   }
 
+  .widgets .catalog button {
+    display: none;
+  }
+
   .info_server_licence > article {
     position: relative;
     top: 0px;
@@ -665,6 +670,43 @@ footer .down_navigate .ilustration_footer {
   .widgets {
     flex-direction: column;
     gap: 8px;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .navigation-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 100;
+  }
+
+  .navigation-menu.open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .drop-menu {
+    position: relative;
+  }
+
+  .drop-menu-after {
+    display: none;
+  }
+
+  .drop-menu:hover .drop-menu-after {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 100%;
   }
 
   .container_inner main {
@@ -700,8 +742,17 @@ footer .down_navigate .ilustration_footer {
 
   .application {
     padding: 40px;
-    gap: 20px;
     flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+    background-color: var(--basic-color);
+    border-radius: 80px;
+    border: 2px solid #b48700;
+    padding: 70px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
   }
 
   .left_site_application {
@@ -710,7 +761,7 @@ footer .down_navigate .ilustration_footer {
 
   .right_site_application .top input,
   .right_site_application .middle input {
-    width: 100%;
+    width: 300px;
   }
 
   .right_site_application .middle {
@@ -718,24 +769,57 @@ footer .down_navigate .ilustration_footer {
     gap: 10px;
   }
 
-  /* footer {
-    flex-direction: column;
-    padding: 40px;
-    height: fit-content;
-    gap: 30px;
+  footer {
+    display: block;
+    gap: 10px;
+    padding: 20px; /* Уменьшить отступы */
   }
 
-  footer .top_footer,
+  footer .logo_footer {
+    display: flex;
+    justify-content: center;
+  }
+  footer .top_footer .social {
+    justify-content: center; /* Центрировать иконки соцсетей */
+  }
+
+  footer .top_footer .social .box_social {
+    width: 36px; /* Уменьшить размер иконок */
+    height: 36px;
+  }
+
+  footer .maker a {
+    display: none;
+    font-size: 18px; /* Уменьшить размер шрифта */
+  }
+  footer .right_site_footer .top_navigate nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
   footer .under_navigate,
-  footer .down_navigate {
-    flex-direction: column;
-    gap: 20px;
+  footer .down_navigate,
+  footer .top_navigate {
+    flex-direction: column; /* Вертикальное расположение */
+    gap: 16px; /* Уменьшить промежутки */
   }
 
-  footer .down_navigate {
-    flex-direction: column;
-    gap: 20px;
-  } */
+  footer .top_footer .contact_info,
+  footer .under_navigate .licences,
+  footer .under_navigate .model,
+  footer .under_navigate .instalation,
+  footer .under_navigate .fresh,
+  footer .down_navigate .server,
+  footer .down_navigate .economic {
+    display: none;
+  }
+  footer .ilustration_footer img {
+    width: 600px;
+    height: 500px;
+    position: relative;
+    margin-bottom: 50px;
+    right: 50px;
+  }
 }
 
 /* Адаптивность для маленьких смартфонов (до 480px) */
@@ -776,17 +860,8 @@ footer .down_navigate .ilustration_footer {
   .right_site_application .middle input {
     width: 100%;
   }
-  /* 
-  footer {
-    padding: 20px;
-    gap: 20px;
+  footer .ilustration_footer img {
+    width: 500px;
+    height: 400px;
   }
-
-  footer .top_footer,
-  footer .under_navigate,
-  footer .down_navigate {
-    flex-direction: column;
-    gap: 20px;
-  } */
 }
-
